@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Field Notes · Girls Flag Football, Illustrated</title>
+<meta name="description" content="Coaching, players, parents, rules and signals: field notes on high school girls flag football from the author of Girls Flag Football, Illustrated.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,800;0,900;1,900&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/site.css">
+<style>
+/* ---------- hero ---------- */
+.bh { position: relative; overflow: hidden; padding: 90px 0 70px; }
+.bh::before { content:""; position:absolute; inset: -30% -10% auto; height: 130%; background:
+  radial-gradient(35% 35% at 15% 10%, rgba(255,255,255,.08), transparent 70%),
+  radial-gradient(45% 45% at 75% 55%, rgba(242,106,27,.20), transparent 70%); pointer-events:none; }
+.bh .ghost.huge { position:absolute; left: 50%; top: 52%; transform: translate(-50%,-50%); font-size: clamp(140px, 22vw, 340px); }
+.bh-grid { position: relative; display:grid; grid-template-columns: 1fr 1.1fr; gap: 50px; align-items: center; }
+.bh h1 { font: 900 clamp(62px, 9vw, 136px)/.84 "Barlow Condensed"; text-transform: uppercase; margin: 16px 0 22px; }
+.bh h1 i { color: var(--orange); font-style: italic; }
+.bh p { color: var(--muted); font-size: 19px; max-width: 470px; margin: 0; }
+.stats { display:flex; gap: 34px; margin-top: 34px; }
+.stats b { display:block; font: 900 44px/1 "Barlow Condensed"; color: var(--orange); }
+.stats span { font: 600 12px Inter; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+
+/* featured post */
+.feat { position: relative; display:block; border: 1px solid var(--line); border-radius: 30px; overflow: hidden; background: linear-gradient(150deg, #1b1d21, #0f1012); min-height: 470px; padding: 34px; transition: border-color .3s, transform .4s; }
+.feat:hover { border-color: rgba(242,106,27,.6); transform: translateY(-4px); }
+.feat .num { position:absolute; right: 18px; top: -12px; font: 900 220px/.8 "Barlow Condensed"; color: transparent; -webkit-text-stroke: 2px rgba(242,106,27,.55); }
+.feat img { position:absolute; right: -10px; bottom: 0; height: 330px; filter: drop-shadow(0 26px 30px rgba(0,0,0,.6)); transition: transform .5s; }
+.feat:hover img { transform: translateY(-6px) scale(1.02); }
+.feat .glow { position:absolute; right: 40px; bottom: 40px; width: 300px; height: 300px; border-radius: 50%; background: radial-gradient(rgba(242,106,27,.35), transparent 65%); }
+.feat .txt { position: relative; max-width: 58%; display:flex; flex-direction: column; gap: 14px; height: 100%; }
+.feat .lbl { font: 700 12px Inter; letter-spacing: .2em; text-transform: uppercase; color: var(--txt); background: var(--orange); align-self: flex-start; padding: 6px 12px; border-radius: 999px; }
+.feat h2 { font: 900 clamp(38px, 4.2vw, 58px)/.92 "Barlow Condensed"; text-transform: uppercase; margin: 6px 0 0; }
+.feat p { color: var(--muted); font-size: 16px; margin: 0; }
+.feat .go { margin-top: auto; padding-top: 30px; font: 700 15px Inter; color: var(--orange); display:flex; align-items:center; gap: 10px; }
+
+/* pillars */
+section { padding: 100px 0; }
+.sec-head { display:flex; justify-content: space-between; align-items: end; gap: 30px; flex-wrap: wrap; }
+.sec-head h2 { font: 900 clamp(44px, 5.4vw, 80px)/.92 "Barlow Condensed"; text-transform: uppercase; margin: 12px 0 0; }
+.sec-head h2 i { color: var(--orange); font-style: italic; }
+.sec-head p { color: var(--muted); max-width: 420px; margin: 0; }
+.pillars { display:grid; grid-template-columns: repeat(6, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 24px; overflow: hidden; margin-top: 46px; }
+.pil { all: unset; box-sizing: border-box; cursor: pointer; position: relative; background: var(--bg); padding: 22px 20px 24px; min-height: 230px; display:flex; flex-direction: column; justify-content: space-between; overflow: hidden; transition: background .3s; }
+.pil:hover, .pil.on { background: var(--bg2); }
+.pil:focus-visible { outline: 2px solid var(--orange); outline-offset: -2px; }
+.pil .n { font: 900 112px/.78 "Barlow Condensed"; color: transparent; -webkit-text-stroke: 1.5px rgba(255,255,255,.18); transition: color .35s, -webkit-text-stroke-color .35s; }
+.pil:hover .n, .pil.on .n { color: var(--orange); -webkit-text-stroke-color: var(--orange); }
+.pil b { font: 900 24px/1 "Barlow Condensed"; text-transform: uppercase; display:block; }
+.pil span { color: var(--muted); font-size: 13px; display:block; margin-top: 6px; line-height: 1.4; }
+.pil .c { position:absolute; top: 18px; right: 18px; font: 700 11px Inter; letter-spacing: .12em; color: var(--muted); }
+.filters-note { color: var(--muted); font-size: 14px; margin-top: 16px; min-height: 22px; }
+.filters-note button { all: unset; cursor: pointer; color: var(--orange); font-weight: 600; margin-left: 8px; }
+
+/* post grid */
+.grid { display:grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 30px; }
+.post { position: relative; display:flex; flex-direction: column; min-height: 400px; border: 1px solid var(--line); border-radius: 24px; background: var(--bg2); overflow: hidden; padding: 24px; transition: border-color .3s, transform .4s; }
+.post:hover { border-color: rgba(242,106,27,.5); transform: translateY(-4px); }
+.post .pn { position:absolute; right: 14px; top: -6px; font: 900 150px/.8 "Barlow Condensed"; color: transparent; -webkit-text-stroke: 1.5px rgba(255,255,255,.08); }
+.post .art { position: relative; height: 180px; display:flex; align-items:flex-end; justify-content:center; margin: 6px 0 18px; }
+.post .art::before { content:""; position:absolute; width: 200px; height: 200px; bottom: -20px; border-radius:50%; background: radial-gradient(rgba(242,106,27,.22), transparent 65%); }
+.post .art img { position: relative; max-height: 100%; max-width: 70%; filter: grayscale(1) contrast(1.08) drop-shadow(0 16px 18px rgba(0,0,0,.55)); transition: filter .45s, transform .45s; }
+.post:hover .art img { filter: grayscale(0) drop-shadow(0 16px 18px rgba(0,0,0,.55)); transform: translateY(-4px); }
+.post .meta { display:flex; justify-content: space-between; align-items: center; gap: 10px; }
+.post h3 { font: 900 28px/.98 "Barlow Condensed"; text-transform: uppercase; margin: 14px 0 10px; }
+.post p { color: var(--muted); font-size: 14.5px; margin: 0; }
+.post .foot { margin-top: auto; padding-top: 18px; display:flex; justify-content: space-between; font: 600 13px Inter; color: var(--muted); }
+.post .foot b { color: var(--orange); }
+.post.hide { display:none; }
+
+/* parent guide strip */
+.strip { position: relative; overflow: hidden; border: 1px solid var(--line); border-radius: 30px; padding: 56px; background: linear-gradient(120deg, #1d1f23, #121316); display:grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: center; }
+.strip .ghost { position:absolute; left: -10px; bottom: -30px; font-size: 200px; }
+.strip h2 { position: relative; font: 900 clamp(40px, 4.6vw, 64px)/.92 "Barlow Condensed"; text-transform: uppercase; margin: 10px 0 12px; }
+.strip h2 i { color: var(--orange); font-style: italic; }
+.strip p { position: relative; color: var(--muted); margin: 0; }
+.strip form { position: relative; display:flex; gap: 10px; flex-wrap: wrap; }
+.strip input { flex: 1 1 220px; padding: 15px 20px; border-radius: 999px; border: 1px solid var(--line); background: var(--bg); color: var(--txt); font: inherit; }
+.strip small { position: relative; display:block; color: var(--muted); font-size: 12px; margin-top: 10px; }
+
+@media (max-width: 980px) {
+  .bh { padding: 50px 0 40px; }
+  .bh-grid { grid-template-columns: 1fr; }
+  .feat { min-height: 440px; padding: 26px; }
+  .feat .txt { max-width: 100%; }
+  .feat img { height: 230px; opacity: .9; }
+  .feat .num { font-size: 160px; }
+  .pillars { grid-template-columns: repeat(2, 1fr); }
+  .pil { min-height: 170px; }
+  .pil .n { font-size: 84px; }
+  .grid { grid-template-columns: 1fr; }
+  .strip { grid-template-columns: 1fr; padding: 34px 26px; }
+  section { padding: 70px 0; }
+}
+</style>
+</head>
+<body>
+<nav class="top"><div class="wrap"><a class="brand" href="../">Girls Flag Football, <b>Illustrated</b></a>
+  <div class="nl"><a href="../">Book</a><a href="../watch/">Watch</a><a class="on" href="./">Field Notes</a></div>
+  <a class="btn sm" href="../#buy">Get the book</a></div></nav>
+
+<header class="bh">
+  <div class="ghost huge">Field Notes</div>
+  <div class="wrap bh-grid">
+    <div class="reveal in">
+      <div class="eyebrow">The blog</div>
+      <h1>Field<br><i>Notes.</i></h1>
+      <p>Rules, coaching, players and parents. Everything around the game of girls flag football, one post at a time.</p>
+      <div class="stats"><div><b>06</b><span>Topics</span></div><div><b>12</b><span>Posts planned</span></div><div><b>1×</b><span>New every week</span></div></div>
+    </div>
+    <a class="feat reveal in" href="is-punting-legal-in-girls-flag-football/">
+      <div class="glow"></div><div class="num">01</div>
+      <img src="../assets/girl-kicker.png" alt="">
+      <div class="txt">
+        <span class="lbl">Featured</span>
+        <span class="pill"><b>04</b> Rules &amp; Signals</span>
+        <h2>Is punting legal in girls flag football?</h2>
+        <p>Yes, but there's a catch. How to declare it, the 5-second rule, and what happens to the ball.</p>
+        <span class="go">Read the post <span>→</span></span>
+      </div>
+    </a>
+  </div>
+</header>
+
+<section style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="sec-head reveal"><div><div class="eyebrow">Browse by topic</div><h2>Six topics. <i>One game.</i></h2></div><p>Tap a topic to filter the posts below.</p></div>
+    <div class="pillars reveal" id="pillars"></div>
+    <div class="filters-note" id="note"></div>
+  </div>
+</section>
+
+<section id="posts">
+  <div class="wrap">
+    <div class="sec-head reveal"><div><div class="eyebrow">Latest</div><h2>From the <i>field.</i></h2></div></div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="strip reveal">
+      <div class="ghost">Parents</div>
+      <div><div class="eyebrow">Coming next</div><h2>The parent guide. <i>From the stands.</i></h2><p>A guide to girls flag football written by a parent, for parents. Get an email when it launches.</p></div>
+      <div><form onsubmit="event.preventDefault(); this.querySelector('button').textContent='You’re on the list ✓';"><input type="email" required placeholder="Your email" aria-label="Email"><button class="btn" type="submit">Notify me</button></form><small>Preview only: signups aren't connected yet.</small></div>
+    </div>
+  </div>
+</section>
+
+<footer class="site"><div class="wrap"><span>© 2026 Craig Clayton · Not affiliated with or endorsed by the NFHS.</span><a href="../">Back to the book →</a></div></footer>
+
+<script>
+const PILLARS = [
+  { n: "01", k: "coaching", t: "Coaching", d: "Practice plans, drills, plays and building a program." },
+  { n: "02", k: "players", t: "Players", d: "Skills, positions, speed and the mental game." },
+  { n: "03", k: "parents", t: "Parents", d: "What to expect, what to buy, how to follow the game." },
+  { n: "04", k: "rules", t: "Rules & Signals", d: "The rules in plain words, and every referee signal." },
+  { n: "05", k: "gear", t: "Gear", d: "What's legal, what's worth buying." },
+  { n: "06", k: "game", t: "The Game", d: "State news, college paths, the 2028 Olympics." },
+];
+const POSTS = [
+  { p: "rules", t: "Is punting legal in girls flag football?", d: "Yes, but you have to declare it first. The 5-second rule, and what happens to the ball.", img: "girl-kicker.png", min: 6, url: "is-punting-legal-in-girls-flag-football/" },
+  { p: "parents", t: "How to play girls flag football: a beginner's guide", d: "The field, the snap, pulling flags, downs, scoring and no contact, under the 2026–27 NFHS rules.", img: "girl-passer.png", min: 7, url: "how-to-play-girls-flag-football/" },
+  { p: "coaching", t: "The 60-minute practice plan for first-year coaches", d: "Warm-up, flag pulling, routes and a scrimmage, minute by minute.", img: "girl-quarterback.png", min: 8 },
+  { p: "parents", t: "Your daughter's first flag football season", d: "What to expect from tryouts to the last game, and what she actually needs.", img: "girl-scorer.png", min: 7 },
+  { p: "rules", t: "What is flag guarding? (And how to avoid it)", d: "The most common runner foul, and the carry that keeps it from happening.", img: "girl-carrier.png", min: 5 },
+  { p: "gear", t: "What to wear: the legal equipment checklist", d: "Mouthguard, belt, shorts with no pockets. Head to toe, rule by rule.", img: "player-legal.png", min: 6 },
+  { p: "players", t: "How to pull a flag: footwork, angles and timing", d: "Close the space, break down, and take the hip, not the jersey.", img: "girl-defender.png", min: 6 },
+  { p: "rules", t: "The 10 referee signals every parent should know", d: "Touchdown, first down, holding and seven more, drawn and explained.", img: "sig-33.png", min: 5 },
+  { p: "coaching", t: "Screen blocking: how to teach the only legal block", d: "Set early, arms in, move with the defender. Drills that work.", img: "girl-runner.png", min: 7 },
+  { p: "game", t: "Which states sanction girls flag football?", d: "The growing list, and what it means for your program.", img: "girl-passer.png", min: 4 },
+  { p: "rules", t: "NFHS vs. other flag rules: what's different", d: "Kicking, blocking, the try and more. Know which rules your league uses.", img: "sig-07.png", min: 6 },
+  { p: "players", t: "Quarterback basics: one pass, both feet behind the line", d: "Footwork, reads and the rules every passer has to know.", img: "girl-quarterback.png", min: 6 },
+  { p: "parents", t: "Watching from the stands: how to follow the game", d: "Downs, the zone to gain and the signals, explained for parents.", img: "sig-08.png", min: 5 },
+];
+const pil = document.getElementById("pillars"), grid = document.getElementById("grid"), note = document.getElementById("note");
+pil.innerHTML = PILLARS.map((x) => `<button class="pil" data-k="${x.k}"><span class="c">${POSTS.filter((p) => p.p === x.k).length} POSTS</span><span class="n">${x.n}</span><span><b>${x.t}</b><span>${x.d}</span></span></button>`).join("");
+grid.innerHTML = POSTS.map((p, i) => {
+  const P = PILLARS.find((x) => x.k === p.p), num = String(i + 1).padStart(2, "0");
+  const tag = p.url ? "a" : "div";
+  return `<${tag} class="post reveal" data-k="${p.p}" ${p.url ? `href="${p.url}"` : 'aria-disabled="true"'}>
+    <span class="pn">${num}</span>
+    <div class="meta"><span class="pill"><b>${P.n}</b> ${P.t}</span>${p.url ? "" : '<span class="soon">Coming soon</span>'}</div>
+    <div class="art"><img src="../assets/${p.img}" alt=""></div>
+    <h3>${p.t}</h3><p>${p.d}</p>
+    <div class="foot"><span>${p.min} min read</span>${p.url ? "<b>Read →</b>" : ""}</div></${tag}>`;
+}).join("");
+let active = null;
+const apply = () => {
+  pil.querySelectorAll(".pil").forEach((b) => b.classList.toggle("on", b.dataset.k === active));
+  grid.querySelectorAll(".post").forEach((c) => c.classList.toggle("hide", !!active && c.dataset.k !== active));
+  const P = PILLARS.find((x) => x.k === active);
+  note.innerHTML = P ? `Showing <b style="color:var(--txt)">${P.t}</b><button type="button" id="clear">Show all</button>` : "";
+  const c = document.getElementById("clear"); if (c) c.onclick = () => { active = null; apply(); };
+};
+pil.querySelectorAll(".pil").forEach((b) => b.onclick = () => { active = active === b.dataset.k ? null : b.dataset.k; apply(); document.getElementById("posts").scrollIntoView({ behavior: "smooth" }); });
+</script>
+<script src="../shared/book3d.js"></script>
+</body>
+</html>

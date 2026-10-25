@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Girls Flag Football, Illustrated · Night Game</title>
+<meta name="description" content="Every rule. Every signal. Every call. The illustrated guide to the 2026–27 NFHS high school girls flag football rules.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,800;0,900;1,900&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared/book3d.css">
+
+<style>
+:root { --bg:#0d0e10; --bg2:#15171a; --bg3:#1c1f23; --line:#2a2d32; --txt:#f4f1ec; --muted:#9a9790; --orange:#f26a1b; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; overflow-x: hidden; overflow-x: clip; }
+body { margin:0; background: var(--bg); color: var(--txt); font: 400 17px/1.6 Inter, system-ui, sans-serif; overflow-x: hidden; overflow-x: clip; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; color: inherit; }
+.wrap { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
+nav { position: sticky; top: 0; z-index: 20; backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); background: rgba(13,14,16,.72); border-bottom: 1px solid var(--line); }
+nav .wrap { display:flex; align-items:center; justify-content:space-between; height: 68px; gap: 16px; }
+.brand { font: 900 22px "Barlow Condensed"; letter-spacing: .02em; text-transform: uppercase; }
+.brand b { color: var(--orange); }
+.nl { display:flex; gap: 30px; font-size: 14px; font-weight: 600; color: var(--muted); }
+.nl a:hover, .nl a.on { color: var(--txt); }
+.nl a.on { box-shadow: inset 0 -2px 0 var(--orange); padding-bottom: 4px; }
+/* book page subnav */
+.subnav { position: sticky; top: var(--navh, 69px); z-index: 19; background: rgba(13,14,16,.86); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid var(--line); }
+.subnav .wrap { display:flex; align-items: stretch; gap: 26px; height: 44px; overflow-x: auto; scrollbar-width: none; white-space: nowrap; font: 600 13px Inter; color: var(--muted); }
+.subnav .wrap::-webkit-scrollbar { display:none; }
+.subnav .sl { display:flex; align-items:center; font: 700 11px Inter; letter-spacing: .18em; text-transform: uppercase; color: var(--orange); }
+.subnav a { display:flex; align-items:center; transition: color .2s, box-shadow .2s; }
+.subnav a:hover, .subnav a.on { color: var(--txt); }
+.subnav a.on { box-shadow: inset 0 -2px 0 var(--orange); }
+section[id] { scroll-margin-top: 112px; }
+.btn { display:inline-flex; align-items:center; gap: 10px; padding: 15px 26px; border-radius: 999px; background: var(--orange); color: #fff; font: 700 15px Inter; transition: transform .2s, box-shadow .2s; box-shadow: 0 10px 30px rgba(242,106,27,.35); white-space: nowrap; }
+.btn:hover { transform: translateY(-2px); box-shadow: 0 16px 40px rgba(242,106,27,.5); }
+.btn.line { background: transparent; border: 1px solid #3a3d43; box-shadow: none; }
+.btn.sm { padding: 10px 18px; font-size: 14px; }
+.eyebrow { font: 700 13px Inter; letter-spacing: .2em; text-transform: uppercase; color: var(--orange); }
+h2 { font: 900 clamp(44px, 5.4vw, 80px)/.92 "Barlow Condensed"; text-transform: uppercase; margin: 12px 0 18px; }
+h2 i { color: var(--orange); font-style: italic; }
+.lead { color: var(--muted); font-size: 18px; max-width: 620px; }
+section { padding: 120px 0; }
+.hero { position: relative; min-height: min(92vh, 900px); display:grid; place-items:center; overflow: hidden; padding: 60px 0 40px; }
+.hero::before { content:""; position:absolute; inset:-20% -10% auto; height: 120%; background:
+  radial-gradient(40% 35% at 18% 8%, rgba(255,255,255,.10), transparent 70%),
+  radial-gradient(40% 35% at 82% 8%, rgba(255,255,255,.10), transparent 70%),
+  radial-gradient(45% 45% at 62% 60%, rgba(242,106,27,.22), transparent 70%); pointer-events:none; }
+.bigword { position:absolute; top: 46%; left: 50%; transform: translate(-50%,-50%); font: 900 clamp(120px, 24vw, 360px)/.8 "Barlow Condensed"; color: transparent; -webkit-text-stroke: 1.5px rgba(255,255,255,.08); white-space: nowrap; pointer-events:none; text-transform: uppercase; }
+.hero-grid { position: relative; display:grid; grid-template-columns: 1fr 1.05fr; align-items:center; gap: 40px; width: 100%; }
+h1 { font: 900 clamp(54px, 7vw, 108px)/.88 "Barlow Condensed"; text-transform: uppercase; margin: 14px 0 20px; }
+h1 i { color: var(--orange); font-style: italic; }
+.sub { color: var(--muted); font-size: 18px; max-width: 420px; margin: 0 0 28px; }
+.ctas { display:flex; gap: 12px; flex-wrap: wrap; }
+.stage { position: relative; height: 640px; display:grid; place-items:center; }
+.stage .halo { position:absolute; width: 560px; height: 560px; border-radius: 50%; background: radial-gradient(rgba(242,106,27,.32), transparent 65%); filter: blur(20px); }
+.stage .behind { position:absolute; height: 430px; right: -10px; top: -6px; z-index: 0; filter: drop-shadow(0 26px 30px rgba(0,0,0,.55)) brightness(.92); }
+.stage .front-girl { position:absolute; height: 400px; left: -30px; bottom: 26px; z-index: 3; filter: drop-shadow(0 30px 30px rgba(0,0,0,.6)); }
+.stage .book3d { --bw: 320px; --spine: #111; z-index: 2; }
+.book-ctrl { color: var(--txt); --btn-on: #0d0e10; margin-top: 46px; position: relative; z-index: 4; }
+.marquee { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); overflow: hidden; white-space: nowrap; background: var(--bg2); }
+.marquee div { display:inline-block; padding: 20px 0; font: 900 36px "Barlow Condensed"; text-transform: uppercase; letter-spacing: .02em; animation: mq 38s linear infinite; }
+.marquee span { margin: 0 30px; }
+.marquee i { color: var(--orange); font-style: normal; }
+@keyframes mq { to { transform: translateX(-50%); } }
+.dyk-old { display:grid; grid-template-columns: repeat(3, 1fr); gap: 26px; margin-top: 56px; }
+.dk { position: relative; background: linear-gradient(180deg, var(--bg2), var(--bg)); border: 1px solid var(--line); border-radius: 26px; padding: 20px 26px 30px; overflow: hidden; }
+.dk::before { content:""; position:absolute; left:50%; top: 150px; width: 260px; height: 260px; transform: translate(-50%,-50%); border-radius:50%; background: radial-gradient(rgba(242,106,27,.28), transparent 65%); }
+.dk img { position: relative; height: 280px; display:block; margin: 0 auto 16px; filter: drop-shadow(0 20px 22px rgba(0,0,0,.6)); }
+.dk p { font: italic 26px/1.25 "Instrument Serif", serif; margin: 0 0 8px; }
+.dk small { color: var(--muted); font-size: 14px; }
+.dk small b { color: var(--orange); font-weight: 600; }
+.contents { border-top: 1px solid var(--txt); margin-top: 50px; }
+.chap { border-bottom: 1px solid var(--line); }
+.chap > button { all: unset; box-sizing: border-box; cursor: pointer; width: 100%; display:grid; grid-template-columns: 80px 1fr auto 40px; gap: 20px; align-items: center; padding: 24px 0; transition: padding .3s, color .3s; }
+.chap > button:hover, .chap.open > button { padding-left: 14px; color: var(--orange); }
+.chap > button:focus-visible { outline: 2px solid var(--orange); outline-offset: 4px; }
+.chap .n { font: 900 26px "Barlow Condensed"; color: var(--orange); }
+.chap .t { font: 400 clamp(26px, 3.2vw, 44px)/1.08 "Instrument Serif", serif; }
+.chap .pg { font: 600 13px Inter; color: var(--muted); letter-spacing: .1em; text-transform: uppercase; }
+.chap .pm { width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--line); display:grid; place-items:center; transition: transform .35s, background .3s, border-color .3s; }
+.chap .pm::before { content:"+"; font: 400 24px/1 Inter; }
+.chap.open .pm { transform: rotate(45deg); background: var(--orange); border-color: var(--orange); color: #fff; }
+.chap .body { display:grid; grid-template-rows: 0fr; transition: grid-template-rows .5s cubic-bezier(.2,.7,.2,1); }
+.chap.open .body { grid-template-rows: 1fr; }
+.chap .body > div { overflow: hidden; }
+.chap .inner { display:grid; grid-template-columns: 80px 1.1fr 1fr; gap: 20px; padding: 0 0 34px; }
+.chap .tag { grid-column: 2; font: italic 24px/1.3 "Instrument Serif", serif; color: var(--txt); margin: 0 0 14px; }
+.chap .secs { grid-column: 2; list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 24px; font-size: 14px; color: var(--muted); }
+.chap .secs li { break-inside: avoid; padding: 3px 0; }
+.chap .secs b { color: var(--orange); font-weight: 700; display:inline-block; min-width: 42px; }
+.chap .hl { grid-column: 3; grid-row: 1 / span 2; background: var(--bg); border: 1px solid var(--line); border-radius: 20px; padding: 20px 22px; }
+.chap .hl h4 { margin: 0 0 10px; font: 800 18px "Barlow Condensed"; text-transform: uppercase; letter-spacing: .06em; color: var(--orange); }
+.chap .hl ul { margin: 0; padding-left: 18px; font-size: 15px; }
+.chap .hl li { padding: 3px 0; }
+.inside { display:grid; grid-template-columns: 1fr 1.25fr; gap: 60px; align-items:center; }
+.feat { list-style:none; padding:0; margin: 26px 0 0; display:grid; gap: 18px; }
+.feat li { display:grid; grid-template-columns: 58px 1fr; gap: 16px; align-items:start; }
+.feat .n { width: 58px; height: 58px; border-radius: 16px; background: var(--bg3); border: 1px solid var(--line); display:grid; place-items:center; font: 900 26px "Barlow Condensed"; color: var(--orange); }
+.feat b { display:block; font: 800 20px "Barlow Condensed"; text-transform: uppercase; letter-spacing: .03em; }
+.feat span { color: var(--muted); font-size: 15px; }
+.spread { position: relative; display:flex; justify-content:center; perspective: 1600px; }
+.spread img { width: 50%; display:block; box-shadow: 0 40px 70px rgba(0,0,0,.6); }
+.spread img:first-child { border-radius: 4px 0 0 4px; transform: rotateY(6deg); transform-origin: right; }
+.spread img:last-child { border-radius: 0 4px 4px 0; transform: rotateY(-6deg); transform-origin: left; }
+.spread::after { content:""; position:absolute; top:0; bottom:0; left:50%; width: 50px; transform: translateX(-50%); background: linear-gradient(90deg, transparent, rgba(0,0,0,.35), transparent); pointer-events:none; }
+.live { display:grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items:center; margin-top: 110px; }
+.paper { position: relative; background: #fff; border-radius: 10px; padding: 26px 26px 18px; box-shadow: 0 40px 80px rgba(0,0,0,.55); color: #1a1a1a; max-width: 520px; justify-self: center; width: 100%; }
+.paper .ph { display:flex; align-items:baseline; gap: 12px; border-bottom: 3px solid #1a1a1a; padding-bottom: 8px; margin-bottom: 8px; }
+.paper .ph b { font: 900 13px "Barlow Condensed"; letter-spacing: .12em; color: var(--orange); text-transform: uppercase; }
+.paper .ph span { font: 900 24px "Barlow Condensed"; text-transform: uppercase; }
+.paper .ph em { margin-left: auto; font-style: normal; font-size: 12px; color: #777; }
+.fig { position: relative; aspect-ratio: 900 / 1205; }
+.fig img { width: 100%; height: 100%; display:block; }
+.hot { position:absolute; width: 34px; height: 34px; margin: -17px 0 0 -17px; border-radius: 50%; border: 3px solid #fff; background: var(--orange); color:#fff; font: 900 17px/28px "Barlow Condensed"; text-align:center; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,.3); padding: 0; transition: transform .2s, background .2s; }
+.hot::after { content:""; position:absolute; inset: -9px; border-radius: 50%; border: 2px solid var(--orange); animation: ping 2s infinite; }
+.hot:hover, .hot.on { transform: scale(1.2); background: #1a1a1a; }
+.hot.on::after { animation: none; opacity: 0; }
+@keyframes ping { from { transform: scale(.7); opacity: 1; } to { transform: scale(1.5); opacity: 0; } }
+.callout { min-height: 260px; }
+.callout .k { font: 900 120px/.8 "Barlow Condensed"; color: var(--orange); margin-top: 14px; }
+.callout h3 { font: 900 44px/.95 "Barlow Condensed"; text-transform: uppercase; margin: 10px 0 10px; }
+.callout p { color: var(--muted); font-size: 18px; margin: 0 0 12px; max-width: 460px; }
+.callout .cite { display:inline-block; font: 600 12px Inter; letter-spacing: .1em; text-transform: uppercase; color: var(--orange); border: 1px solid rgba(242,106,27,.4); border-radius: 999px; padding: 5px 12px; }
+.chips { display:flex; gap: 8px; margin-top: 26px; flex-wrap: wrap; }
+.chips button { border: 1px solid var(--line); background: var(--bg2); border-radius: 999px; padding: 8px 14px; cursor: pointer; font: 600 13px Inter; }
+.chips button.on { background: var(--orange); border-color: var(--orange); }
+.cards { display:grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 50px; }
+.card { perspective: 1200px; height: 380px; cursor: pointer; }
+.card .in { position: relative; width: 100%; height: 100%; transform-style: preserve-3d; transition: transform .7s cubic-bezier(.2,.7,.2,1); }
+.card.flip .in { transform: rotateY(180deg); }
+@media (hover: hover) { .card:not(.flip):hover .in { transform: translateY(-6px) rotateY(-8deg); } .card:hover .side { border-color: rgba(242,106,27,.45); } }
+.card .side { position:absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden; border-radius: 22px; border: 1px solid var(--line); overflow: hidden; display:flex; flex-direction:column; }
+.card .f { background: radial-gradient(70% 55% at 50% 40%, #24272c, var(--bg)); align-items:center; padding: 18px 16px 18px; }
+.card .f img { flex: 1; min-height: 0; max-width: 100%; object-fit: contain; filter: grayscale(1) contrast(1.1) brightness(1.05);  transition: filter .45s; }
+@media (hover: hover) { .card:hover .f img { filter: none; } }
+.card:focus-visible .f img, .card:active .f img { filter: none; }
+.card .f .q { font: 900 24px/1 "Barlow Condensed"; text-transform: uppercase; margin-top: 10px; }
+.card .f small { color: var(--muted); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; margin-top: 6px; text-align:center; }
+.card .b { transform: rotateY(180deg); background: linear-gradient(160deg, #1f2226, #121316); padding: 24px 22px; justify-content: space-between; border-color: rgba(242,106,27,.5); }
+.card .b .num { font: 900 76px/.8 "Barlow Condensed"; color: var(--orange); }
+.card .b .num small { display:block; font: 700 12px Inter; letter-spacing: .16em; color: var(--muted); margin-bottom: 8px; }
+.card .b h3 { font: 900 32px/.95 "Barlow Condensed"; text-transform: uppercase; margin: 12px 0 8px; }
+.card .b p { color: var(--muted); font-size: 14px; margin: 0; }
+.card .b .yd { display:flex; justify-content: space-between; align-items:end; border-top: 1px solid var(--line); padding-top: 14px; gap: 10px; }
+.card .b .yd b { font: 900 28px/1 "Barlow Condensed"; }
+.card .b .yd span { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .1em; text-align: right; }
+.editor { border: 1px solid var(--line); border-radius: 28px; padding: 54px; display:grid; grid-template-columns: auto 1fr; gap: 40px; align-items:center; background: linear-gradient(135deg, #17191c, #0f1012); }
+.editor .mark { font: 900 120px/.8 "Barlow Condensed"; color: var(--orange); }
+.editor p { font: 600 24px/1.4 Inter; margin: 0 0 14px; }
+.editor small { color: var(--muted); font-size: 15px; }
+.price { display:grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 50px; }
+.p { border: 1px solid var(--line); border-radius: 24px; padding: 34px 28px; display:flex; flex-direction:column; gap: 10px; background: var(--bg2); }
+.p.hot2 { border-color: var(--orange); box-shadow: 0 0 0 1px var(--orange), 0 30px 80px rgba(242,106,27,.18); }
+.p .t { font: 800 22px "Barlow Condensed"; text-transform: uppercase; letter-spacing: .04em; }
+.p .amt { font: 900 64px/1 "Barlow Condensed"; }
+.p span { color: var(--muted); font-size: 15px; flex: 1; }
+.p .btn { justify-content:center; margin-top: 10px; }
+footer { border-top: 1px solid var(--line); padding: 36px 0 110px; color: var(--muted); font-size: 13px; }
+.reveal { opacity: 0; transform: translateY(30px); transition: opacity .9s, transform .9s; }
+.reveal.in { opacity: 1; transform: none; }
+@media (max-width: 980px) {
+  nav .wrap { flex-wrap: wrap; height: auto; padding-top: 12px; row-gap: 6px; }
+  .nl { order: 3; width: 100%; gap: 26px; }
+  .nl a { padding: 4px 0 10px; }
+  .nl a.on { padding-bottom: 10px; }
+  .subnav .wrap { gap: 22px; height: 42px; }
+  section[id] { scroll-margin-top: 150px; }
+  .brand { font-size: 16px; line-height: 1.05; max-width: 190px; }
+  .paper { padding: 18px 16px 12px; }
+  .paper .ph { flex-wrap: wrap; gap: 4px 10px; }
+  .paper .ph b { white-space: nowrap; }
+  .paper .ph span { font-size: 21px; white-space: nowrap; }
+  .paper .ph em { flex-basis: 100%; margin-left: 0; }
+  .hot { width: 30px; height: 30px; margin: -15px 0 0 -15px; font-size: 15px; line-height: 24px; }
+  .callout .k { font-size: 84px; }
+  .callout h3 { font-size: 36px; }
+  .cards:not(.dykc) .card .f .q { font-size: 18px; }
+  .cards:not(.dykc) .card .f small { font-size: 10px; letter-spacing: .08em; }
+  .cards:not(.dykc) .card .f { padding: 14px 10px; }
+  nav .btn.sm { padding: 9px 14px; font-size: 13px; }
+  h1 { font-size: clamp(46px, 13vw, 64px); }
+  h2 { font-size: clamp(38px, 11vw, 56px); }
+  .hero { min-height: auto; padding-top: 30px; }
+  .hero-grid { grid-template-columns: 1fr; text-align:center; }
+  .sub { margin-left:auto; margin-right:auto; }
+  .ctas { justify-content:center; }
+  .stage { height: 520px; }
+  .stage .book3d { --bw: 240px; }
+  .stage .behind { height: 300px; right: -20px; top: 0; }
+  .stage .front-girl { height: 250px; left: -16px; bottom: 90px; }
+  .dyk, .price { grid-template-columns: 1fr; }
+  .chap > button { grid-template-columns: 46px 1fr 40px; }
+  .chap .pg { display:none; }
+  .chap .inner { grid-template-columns: 1fr; }
+  .chap .tag, .chap .secs, .chap .hl { grid-column: 1; grid-row: auto; }
+  .chap .secs { columns: 1; }
+  .inside, .live, .editor { grid-template-columns: 1fr; }
+  .live { margin-top: 70px; }
+  .cards { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .card { height: 320px; }
+  .card .b { padding: 18px 16px; }
+  .card .b h3 { font-size: 24px; }
+  .card .b .num { font-size: 56px; }
+  .card .b .yd b { font-size: 20px; }
+  .editor { padding: 34px 26px; }
+  section { padding: 80px 0; }
+}
+
+.dykc { grid-template-columns: repeat(3, 1fr); }
+.dykc .card { height: 460px; }
+.dykc .f { justify-content: flex-end; padding: 0 22px 22px; background: radial-gradient(60% 45% at 50% 42%, rgba(242,106,27,.30), transparent 70%), linear-gradient(180deg, var(--bg2), var(--bg)); }
+.dykc .f img { filter: grayscale(1) contrast(1.08) drop-shadow(0 20px 22px rgba(0,0,0,.6)); max-height: 290px; flex: none; margin-top: auto; transition: filter .45s; }
+@media (hover: hover) { .dykc .card:hover .f img { filter: grayscale(0) contrast(1) drop-shadow(0 20px 22px rgba(0,0,0,.6)); } }
+.dykc .card:focus-visible .f img, .dykc .card:active .f img { filter: grayscale(0) drop-shadow(0 20px 22px rgba(0,0,0,.6)); }
+.dykc .f .lbl { align-self: flex-start; font: 700 12px Inter; letter-spacing: .18em; text-transform: uppercase; color: var(--orange); margin-top: 14px; }
+.dykc .f .qq { align-self: stretch; font: italic 25px/1.2 "Instrument Serif", serif; margin-top: 6px; text-align: left; }
+.dykc .b .ans { font: 900 64px/.85 "Barlow Condensed"; text-transform: uppercase; color: var(--orange); }
+.dykc .b h3 { font: 900 30px/1 "Barlow Condensed"; }
+.card .tap { position:absolute; top: 14px; right: 14px; width: 30px; height: 30px; border-radius: 50%; border: 1px solid var(--line); display:grid; place-items:center; color: var(--muted); font-size: 15px; }
+@media (max-width: 980px) { .dykc { grid-template-columns: 1fr; } .dykc .card { height: 430px; } }
+/* field notes */
+.fn { position: relative; overflow: hidden; }
+.fn-ghost { position:absolute; left: 50%; top: 40px; transform: translateX(-50%); font: 900 clamp(120px, 19vw, 300px)/.8 "Barlow Condensed"; color: transparent; -webkit-text-stroke: 1.5px rgba(255,255,255,.06); white-space: nowrap; pointer-events: none; }
+.fn .wrap { position: relative; }
+.fn-head { display:flex; justify-content: space-between; align-items: flex-end; gap: 20px; flex-wrap: wrap; margin-bottom: 36px; }
+.ghostbtn { background: transparent !important; border: 1px solid var(--line); color: var(--txt) !important; box-shadow: none !important; }
+.fn-grid { display:grid; grid-template-columns: 1.35fr 1fr 1fr; gap: 20px; }
+.fn-card { position: relative; overflow: hidden; display:flex; flex-direction: column; justify-content: flex-end; min-height: 520px; padding: 26px; border-radius: 26px; border: 1px solid var(--line); background: radial-gradient(60% 50% at 50% 42%, rgba(242,106,27,.2), transparent 70%), var(--bg2); color: var(--txt); text-decoration: none; transition: transform .35s, border-color .35s; }
+.fn-card:hover { transform: translateY(-6px); border-color: rgba(242,106,27,.5); }
+.fn-n { position:absolute; right: 14px; top: 6px; font: 900 170px/.8 "Barlow Condensed"; color: transparent; -webkit-text-stroke: 2px rgba(255,255,255,.1); transition: -webkit-text-stroke-color .35s, color .35s; }
+.fn-card.big .fn-n { -webkit-text-stroke-color: rgba(242,106,27,.6); }
+.fn-card:hover .fn-n { color: rgba(242,106,27,.9); -webkit-text-stroke-color: transparent; }
+.fn-pill { position:absolute; left: 22px; top: 22px; font: 700 11px Inter; letter-spacing: .12em; text-transform: uppercase; border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; color: var(--muted); background: rgba(0,0,0,.35); }
+.fn-pill b { color: var(--orange); font: 900 13px "Barlow Condensed"; margin-right: 4px; }
+.fn-card img { position:absolute; left: 50%; top: 60px; transform: translateX(-50%); height: 250px; filter: grayscale(1) drop-shadow(0 18px 20px rgba(0,0,0,.6)); transition: filter .45s, transform .45s; }
+.fn-card.big img { height: 290px; }
+.fn-card:hover img { filter: drop-shadow(0 18px 20px rgba(0,0,0,.6)); transform: translateX(-50%) scale(1.04); }
+.fn-t { position: relative; }
+.fn-t h3 { font: 900 30px/.95 "Barlow Condensed"; text-transform: uppercase; margin: 0 0 8px; }
+.fn-card.big h3 { font-size: 40px; }
+.fn-t p { color: var(--muted); font-size: 15px; margin: 0 0 14px; }
+.fn-go { font: 700 14px Inter; color: var(--orange); }
+.fn-soon { font: 700 10px Inter; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); border: 1px dashed #3a3d43; border-radius: 999px; padding: 3px 9px; }
+.fn-new { display:inline-block; font: 700 11px Inter; letter-spacing: .16em; text-transform: uppercase; background: var(--orange); color: #fff; border-radius: 999px; padding: 4px 10px; margin-bottom: 10px; }
+/* coming soon */
+.cs-grid { display:grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 50px; }
+.cs-card { position: relative; overflow: hidden; border: 1px solid var(--line); border-radius: 28px; padding: 40px; background: linear-gradient(130deg, #1d1f23, #121316); display:flex; flex-direction: column; align-items: flex-start; }
+.cs-card > * { position: relative; }
+.cs-card > .cs-gh { position:absolute; right: -10px; bottom: -24px; font: 900 170px/.8 "Barlow Condensed"; text-transform: uppercase; color: transparent; -webkit-text-stroke: 1.5px rgba(255,255,255,.07); white-space: nowrap; pointer-events: none; user-select: none; }
+.cs-card h3 { font: 900 clamp(38px, 4vw, 56px)/.92 "Barlow Condensed"; text-transform: uppercase; margin: 16px 0 12px; }
+.cs-card h3 i { color: var(--orange); font-style: italic; }
+.cs-card p { color: var(--muted); margin: 0 0 22px; }
+.cs-top { display:grid; grid-template-columns: 1fr 150px; gap: 22px; align-items: start; width: 100%; margin-bottom: 18px; }
+.cs-sub { font: italic 21px/1.25 "Instrument Serif", serif; color: var(--txt); }
+.cs-cover { width: 150px; border-radius: 4px; transform: rotate(3deg); box-shadow: 0 24px 44px rgba(0,0,0,.6); }
+.cs-form { display:flex; gap: 10px; flex-wrap: wrap; width: 100%; }
+.cs-form input { flex: 1 1 200px; min-width: 0; padding: 15px 20px; border-radius: 999px; border: 1px solid var(--line); background: var(--bg); color: var(--txt); font: inherit; }
+.cs-card small { color: var(--muted); font-size: 12px; margin-top: 10px; }
+.cs-list { list-style: none; margin: 0 0 6px; padding: 0; display:grid; gap: 14px; }
+.cs-list li { display:grid; grid-template-columns: 46px 1fr; gap: 14px; align-items: start; }
+.cs-list b { width: 46px; height: 46px; border-radius: 14px; background: var(--bg3); border: 1px solid var(--line); display:grid; place-items:center; font: 900 22px "Barlow Condensed"; color: var(--orange); }
+.cs-list span { color: var(--muted); font-size: 15px; }
+.cs-list strong { display:block; color: var(--txt); font: 800 19px "Barlow Condensed"; text-transform: uppercase; letter-spacing: .03em; }
+.cs-book { margin-top: auto; padding-top: 26px; font: 700 15px Inter; color: var(--orange); }
+@media (max-width: 980px) {
+  .cs-grid { grid-template-columns: 1fr; gap: 34px; }
+  .cs-card { padding: 30px 24px; }
+  .cs-card > .cs-gh { font-size: 96px; bottom: -12px; }
+  .cs-top { grid-template-columns: 1fr; gap: 22px; }
+  .cs-cover { width: 150px; order: -1; margin: 4px 0 0 6px; }
+  .cs-sub { font-size: 18px; }
+  .fn-card.big { min-height: 500px; }
+}
+@media (max-width: 980px) { .fn-grid { grid-template-columns: 1fr; } .fn-card { min-height: 400px; } .fn-n { font-size: 130px; } .fn-card img, .fn-card.big img { height: 220px; } }
+</style>
+</head>
+<body>
+<nav><div class="wrap"><a class="brand" href="#">Girls Flag Football, <b>Illustrated</b></a>
+  <div class="nl"><a class="on" href="./">Book</a><a href="watch/">Watch</a><a href="blog/">Field Notes</a></div>
+  <a class="btn sm" href="#buy">Get the book</a></div></nav>
+<div class="subnav" aria-label="On this page"><div class="wrap"><span class="sl">On this page</span><a href="#dyk">Did you know</a><a href="#contents">Contents</a><a href="#inside">Inside</a><a href="#signals">Signals</a><a href="#notes">Latest notes</a><a href="#soon">Coming soon</a><a href="#buy">Pricing</a></div></div>
+
+<header class="hero">
+  <div class="bigword">Flag</div>
+  <div class="wrap hero-grid">
+    <div class="reveal in">
+      <div class="eyebrow">2026–27 NFHS rules · Coaches · Players · Parents</div>
+      <h1>Every rule.<br>Every signal.<br><i>Every call.</i></h1>
+      <p class="sub">The illustrated guide to high school girls flag football. Open to any page and understand the rule in under a minute.</p>
+      <div class="ctas"><a class="btn" href="#buy">Get the book</a><a class="btn line" href="#inside">Look inside</a></div>
+    </div>
+    <div class="stage">
+      <div class="halo"></div>
+      <img class="behind" src="assets/girl-passer.png" alt="">
+      <div>
+        <div class="book3d" id="bookB" data-book tabindex="0" aria-label="3D book. Drag to rotate.">
+          <div class="book">
+            <div class="face front"><img src="assets/cover-front.jpg" alt="Front cover"></div>
+            <div class="face back"><img src="assets/cover-back.jpg" alt="Back cover"></div>
+            <div class="face spine"><span>Girls Flag Football, <b>Illustrated</b></span></div>
+            <div class="face fore"></div><div class="face top"></div><div class="face bottom"></div>
+          </div>
+          <div class="shadow"></div>
+        </div>
+        <div class="book-ctrl" data-book-ctrl="bookB"><button data-side="front"><span>Front</span></button><button data-side="back"><span>Back</span></button><small>Drag or swipe to turn the book</small></div>
+      </div>
+      <img class="front-girl" src="assets/girl-runner.png" alt="">
+    </div>
+  </div>
+</header>
+
+<div class="marquee" aria-hidden="true"><div>
+  <span>208 full-color pages</span><i>✦</i><span>10 rules</span><i>✦</i><span>38 referee signals</span><i>✦</i><span>45 game situations</span><i>✦</i><span>Penalty Finder</span><i>✦</i>
+  <span>208 full-color pages</span><i>✦</i><span>10 rules</span><i>✦</i><span>38 referee signals</span><i>✦</i><span>45 game situations</span><i>✦</i><span>Penalty Finder</span><i>✦</i>
+</div></div>
+
+<section id="dyk">
+  <div class="wrap">
+    <div class="eyebrow reveal">Did you know…</div>
+    <h2 class="reveal">It's not the game <i>you grew up with.</i></h2>
+    <p class="lead reveal">Think you know the rules? Tap a card to check.</p>
+    <div class="cards dykc" id="dykcards"></div>
+  </div>
+</section>
+
+<section id="contents" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="eyebrow reveal">Contents</div>
+    <h2 class="reveal">Ten rules. <i>One page at a time.</i></h2>
+    <p class="lead reveal">Tap a chapter to see what's inside.</p>
+    <div class="contents reveal" id="chapters"></div>
+  </div>
+</section>
+
+<section id="inside">
+  <div class="wrap">
+    <div class="inside">
+      <div class="reveal">
+        <div class="eyebrow">Inside the book</div>
+        <h2>Open to any page. <i>Get the call.</i></h2>
+        <ul class="feat">
+          <li><div class="n">10</div><div><b>Every rule, in plain words</b><span>All 10 rules of the 2026–27 NFHS game, with the rule number for each one.</span></div></li>
+          <li><div class="n">38</div><div><b>Every official signal, drawn</b><span>Big signal cards with the yardage, who it's called on and the key point.</span></div></li>
+          <li><div class="n">45</div><div><b>"You make the call"</b><span>Real game situations to test players, parents and new officials.</span></div></li>
+          <li><div class="n">1</div><div><b>Penalty Finder</b><span>Every foul by yardage, for quick answers on the sideline.</span></div></li>
+        </ul>
+      </div>
+      <div class="spread reveal"><img src="assets/page-019.jpg" alt="Sample page: legally equipped"><img src="assets/page-045.jpg" alt="Sample page: types of fouls"></div>
+    </div>
+    <div class="live">
+      <div class="paper reveal">
+        <div class="ph"><b>Rule 1-5-1</b><span>Legally Equipped</span><em>Tap a number</em></div>
+        <div class="fig" id="fig"><img src="assets/player-legal.png" alt="Player wearing all required equipment"></div>
+      </div>
+      <div class="reveal">
+        <div class="eyebrow">Try a page from the book</div>
+        <div class="callout" id="callout" aria-live="polite"></div>
+        <div class="chips" id="chips"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="signals" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="eyebrow reveal">Read the referee</div>
+    <h2 class="reveal">What's the call? <i>Flip to find out.</i></h2>
+    <p class="lead reveal">All 38 official signals are drawn in the book. Tap a card to check your answer.</p>
+    <div class="cards" id="cards"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap"><div class="editor reveal"><div class="mark">“</div><div><p>Edited by a high school head coach, teacher and author, and checked page by page against what really happens on game day.</p><small><b style="color:var(--txt)">Becca Moore</b> · Head Coach, Massillon Tigers Girls Flag Football · Editor</small></div></div></div>
+</section>
+
+<section id="notes" class="fn">
+  <div class="fn-ghost">FIELD NOTES</div>
+  <div class="wrap">
+    <div class="fn-head"><div><div class="eyebrow reveal">From the field</div><h2 class="reveal">Field <i>Notes.</i></h2><p class="lead reveal">Rules questions, coaching and the parent's view of the game, one post at a time.</p></div><a class="btn ghostbtn reveal" href="blog/">All field notes →</a></div>
+    <div class="fn-grid">
+      <a class="fn-card big reveal" href="blog/how-to-play-girls-flag-football/"><span class="fn-n">02</span><span class="fn-pill"><b>03</b> Parents</span><img src="assets/girl-passer.png" alt=""><div class="fn-t"><span class="fn-new">New</span><h3>How to play girls flag football</h3><p>A beginner's guide to the 2026–27 NFHS high school rules: the field, the snap, pulling flags, downs and scoring.</p><span class="fn-go">Read the guide →</span></div></a>
+      <a class="fn-card reveal" href="blog/is-punting-legal-in-girls-flag-football/"><span class="fn-n">01</span><span class="fn-pill"><b>04</b> Rules &amp; Signals</span><img src="assets/girl-kicker.png" alt=""><div class="fn-t"><h3>Is punting legal in girls flag football?</h3><p>Yes, but you have to declare it. The 5-second rule, and what happens to the ball.</p><span class="fn-go">Read the post →</span></div></a>
+      <div class="fn-card reveal"><span class="fn-n">05</span><span class="fn-pill"><b>04</b> Rules &amp; Signals</span><img src="assets/girl-carrier.png" alt=""><div class="fn-t"><h3>What is flag guarding?</h3><span class="fn-soon">Coming soon</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="soon" class="cs">
+  <div class="wrap">
+    <div class="eyebrow reveal">Coming soon</div>
+    <h2 class="reveal">More from the <i>sideline.</i></h2>
+    <p class="lead reveal">Two new ways into the game are on the way. Both are built on the same 2026–27 NFHS rules as the book, and the book is ready now.</p>
+    <div class="cs-grid">
+      <div class="cs-card reveal">
+        <div class="ghost cs-gh">Parents</div>
+        <div class="cs-top">
+          <div><span class="fn-soon">The parent guide · Coming soon</span>
+          <h3>From Home <i>to the Stands.</i></h3>
+          <div class="cs-sub">A Parent's Guide to Girls Flag Football</div></div>
+          <img class="cs-cover" src="assets/parent-guide-cover.jpg" alt="From Home to the Stands: A Parent's Guide to Girls Flag Football, by Craig Clayton. Cover.">
+        </div>
+        <p>A guide to girls flag football written by a parent, for parents. What you'll see from the bleachers, from preseason to the last game, in plain words.</p>
+        <form class="cs-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='You’re on the list ✓';"><input type="email" required placeholder="Your email" aria-label="Email"><button class="btn" type="submit">Notify me</button></form>
+        <small>Preview only: signups aren't connected yet.</small>
+        <a class="cs-book" href="#buy">Can't wait? The full rules are in the book →</a>
+      </div>
+      <div class="cs-card reveal">
+        <div class="ghost cs-gh">iPhone</div>
+        <span class="fn-soon">The iPhone app</span>
+        <h3>The book, <i>in your pocket.</i></h3>
+        <ul class="cs-list">
+          <li><b>38</b><span><strong>Signal Lookup</strong> Look up any referee signal by number or by what you see.</span></li>
+          <li><b>10</b><span><strong>Rules Browser</strong> Every rule, with its rule number, searchable.</span></li>
+          <li><b>1</b><span><strong>Penalty Finder</strong> Every foul by yardage, on the sideline.</span></li>
+          <li><b>?</b><span><strong>You make the call</strong> Game situations to test yourself.</span></li>
+        </ul>
+        <a class="cs-book" href="#buy">All of it is in the book today →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="buy" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="eyebrow reveal">Get the book</div>
+    <h2 class="reveal">Choose your <i>edition.</i></h2>
+    <div class="price">
+      <div class="p reveal"><div class="t">Paperback</div><div class="amt">$29.99</div><span>208 full-color pages · 8.5 × 11 · Printed and shipped by Amazon</span><a class="btn line" href="#">Buy on Amazon</a></div>
+      <div class="p hot2 reveal"><div class="t">PDF</div><div class="amt">$19.99</div><span>Instant download for tablet, phone or print-at-home</span><a class="btn" href="#">Download now</a></div>
+      <div class="p reveal"><div class="t">Team license</div><div class="amt">$59</div><span>One PDF for your whole roster and coaching staff</span><a class="btn line" href="#">Get the team license</a></div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap">© 2026 Craig Clayton · ISBN 979-8162802600 · Rule references: 2026–27 NFHS Flag Football Rules. Not affiliated with or endorsed by the NFHS.</div></footer>
+
+<script>
+const HIGHLIGHTS = {
+  1: ["The full Diagram #2 field, every line labeled", "The girls' ball vs. the boys' ball, drawn to scale", "Legal and illegal equipment, head to toe", "The three-flag belt, front and back"],
+  2: ["39 playing terms in plain English", "Catches, fumbles and loose balls", "Team designations: offense, defense, kicking and receiving", "A full glossary at the end of the chapter"],
+  3: ["The game clock, period by period", "Time-outs: who gets them and when", "The 25-second play clock", "Substitution rules"],
+  4: ["Every way the ball becomes dead", "Is the runner down? Hand vs. knee", "Out-of-bounds spots, with field diagrams"],
+  5: ["The zone to gain, with examples", "Who gets the ball after a series", "Down and possession after a penalty"],
+  6: ["Declaring a punt", "First touching by the kicking team", "Touchbacks and safeties on kicks", "Kick-catch interference"],
+  7: ["Before the snap: encroachment and false starts", "Formation and motion", "Handing the ball forward and backward", "Legal and illegal passes, pass interference"],
+  8: ["Point values", "Touchdowns and the 1- or 2-point try", "Field goals, by state adoption", "Safeties and the momentum exception"],
+  9: ["Screen blocking only", "Flag guarding and holding", "Personal fouls and roughing the passer", "Unsportsmanlike conduct, players and coaches"],
+  10: ["The penalty, step by step", "Half the distance to the goal", "Where the penalty is walked off", "The Penalty Finder: every foul by yardage"],
+};
+fetch("assets/chapters.json").then((r) => r.json()).then((chs) => {
+  const el = document.getElementById("chapters");
+  el.innerHTML = chs.map((c) => {
+    const secs = c.secs.length > 12 ? c.secs.slice(0, 12).concat([["", `…and ${c.secs.length - 12} more terms`]]) : c.secs;
+    return `<div class="chap"><button aria-expanded="false"><span class="n">${String(c.n).padStart(2, "0")}</span><span class="t">${c.name}</span><span class="pg">Page ${c.page}</span><span class="pm"></span></button>
+      <div class="body"><div><div class="inner"><p class="tag">${c.tag}</p>
+        <ul class="secs">${secs.map(([a, b]) => `<li>${a ? `<b>${a}</b>` : ""}${b}</li>`).join("")}</ul>
+        <div class="hl"><h4>In this chapter</h4><ul>${HIGHLIGHTS[c.n].map((h) => `<li>${h}</li>`).join("")}</ul></div></div></div></div></div>`;
+  }).join("");
+  el.querySelectorAll(".chap > button").forEach((b) => b.addEventListener("click", () => {
+    const chap = b.parentElement, open = !chap.classList.contains("open");
+    el.querySelectorAll(".chap.open").forEach((o) => { o.classList.remove("open"); o.firstElementChild.setAttribute("aria-expanded", "false"); });
+    if (open) { chap.classList.add("open"); b.setAttribute("aria-expanded", "true"); }
+  }));
+  el.querySelector(".chap > button").click();
+});
+
+const SPOTS = [
+  { n: 1, x: 57, y: 16, t: "Mouthguard", d: "One mouthguard that covers the biting surfaces and back teeth. A custom fit is recommended.", r: "Rule 1-5-1c" },
+  { n: 2, x: 32, y: 34, t: "Jersey", d: "Unaltered from the manufacturer and tucked in, so the flag belt is fully visible.", r: "Rule 1-5-1a" },
+  { n: 3, x: 44, y: 58, t: "Shorts", d: "One solid color that contrasts with the flags. No pockets, exposed drawstrings or belt loops.", r: "Rule 1-5-1d" },
+  { n: 4, x: 65, y: 52, t: "Flag belt", d: "Three flags: one on each hip and one on the tailbone, with the buckle in front.", r: "Rule 1-5-1f" },
+  { n: 5, x: 71, y: 91, t: "Shoes", d: "A covered foot on a firm sole. Cleats can be no longer than ½ inch.", r: "Rule 1-5-1e" },
+];
+const fig = document.getElementById("fig"), callout = document.getElementById("callout"), chips = document.getElementById("chips");
+fig.insertAdjacentHTML("beforeend", SPOTS.map((s) => `<button class="hot" style="left:${s.x}%;top:${s.y}%" data-n="${s.n}" aria-label="${s.t}">${s.n}</button>`).join(""));
+chips.innerHTML = SPOTS.map((s) => `<button data-n="${s.n}">${s.n} · ${s.t}</button>`).join("");
+const show = (n) => {
+  const s = SPOTS.find((x) => x.n === n);
+  callout.innerHTML = `<div class="k">${s.n}</div><h3>${s.t}</h3><p>${s.d}</p><span class="cite">${s.r}</span>`;
+  document.querySelectorAll(".hot[data-n], .chips [data-n]").forEach((b) => b.classList.toggle("on", +b.dataset.n === n));
+};
+document.querySelectorAll(".hot, .chips button").forEach((b) => { b.addEventListener("click", () => show(+b.dataset.n)); b.addEventListener("mouseenter", () => show(+b.dataset.n)); });
+show(1);
+
+const SIGS = [
+  { n: 5, q: "Both arms straight up", t: "Score is good", d: "Touchdown, a good try, or a field goal.", y: "Points", l: "Scoring team" },
+  { n: 6, q: "Palms together overhead", t: "Safety", d: "The offense is stopped in its own end zone. 2 points to the defense.", y: "+2", l: "Defense" },
+  { n: 8, q: "Arm points downfield", t: "First down", d: "A new series. The arm points the way the offense is going.", y: "New series", l: "Offense" },
+  { n: 10, q: "Arms swept across the waist", t: "Incomplete / declined", d: "Incomplete pass, penalty declined, no play or no score.", y: "No yards", l: "Result" },
+  { n: 18, q: "Both hands on the hips", t: "Encroachment", d: "Across the neutral zone after the ball is ready. The play never starts.", y: "5 yards", l: "Dead ball" },
+  { n: 33, q: "Hand grips the other wrist", t: "Holding", d: "Grabbing or wrapping an opponent to hold her back.", y: "10 yards", l: "Either team" },
+  { n: 38, q: "Hand sweeps past the hip", t: "Flag guarding", d: "The runner stiff-arms or uses her arms or the ball to block the pull.", y: "10 yards", l: "Ball carrier" },
+  { n: 24, q: "Arms straight out to the sides", t: "Unsportsmanlike", d: "Taunting, bad language or showboating. A second one is an ejection.", y: "10 yards", l: "Anyone" },
+];
+
+const DYK = [
+  { img: "carrier", q: "Does the runner's whole body have to cross the goal line to score?", a: "No.", t: "Just the ball", d: "A touchdown counts the moment the ball breaks the plane of the goal line. Her feet can still be in the field of play.", r: "Rule 8-2-1" },
+  { img: "quarterback", q: "How many forward passes can a team throw on one down?", a: "One.", t: "From behind the line", d: "One forward pass per down, and both of the passer's feet must be behind the neutral zone when she throws.", r: "Rule 7-5-1" },
+  { img: "kicker", q: "Can you punt in girls flag football?", a: "Yes.", t: "But declare it first", d: "The kicking team must declare the punt before the ball is ready for play. Once it's declared, it has to kick.", r: "Rule 6-1-1" },
+  { img: "scorer", q: "A fumble hits the ground. Can the defense scoop it up and score?", a: "No.", t: "Ground = dead", d: "A fumble or backward pass that touches the ground is dead right there. No scoop-and-score in flag football.", r: "Rule 7-4-3" },
+  { img: "runner", q: "When is the runner down?", a: "Flag off.", t: "Or a knee hits", d: "When her flag comes off, or any part of her body other than a hand or foot touches the ground.", r: "Rule 4-2-2" },
+  { img: "defender", q: "Can a defender pull the flag of a player who doesn't have the ball?", a: "No.", t: "10-yard foul", d: "Unless she was faked to, or the player is trying to catch a muffed pass or fumble.", r: "Rule 9-2-3e" },
+];
+document.getElementById("dykcards").innerHTML = DYK.map((c) => `<div class="card reveal" tabindex="0" role="button" aria-label="Flip card: ${c.q}">
+  <div class="in"><div class="side f"><span class="tap">↻</span><img src="assets/girl-${c.img}.png" alt=""><div class="lbl">Did you know?</div><div class="qq">${c.q}</div></div>
+  <div class="side b"><div><div class="ans">${c.a}</div><h3>${c.t}</h3><p>${c.d}</p></div><div class="yd"><b>${c.r}</b><span>Tap to flip back</span></div></div></div></div>`).join("");
+
+const cards = document.getElementById("cards");
+cards.innerHTML = SIGS.map((s) => `<div class="card reveal" tabindex="0" role="button" aria-label="Flip card: ${s.q}">
+  <div class="in"><div class="side f"><span class="tap">↻</span><img src="assets/sig-${String(s.n).padStart(2, "0")}.png" alt=""><div class="q">What's the call?</div><small>${s.q}</small></div>
+  <div class="side b"><div><div class="num"><small>SIGNAL</small>${s.n}</div><h3>${s.t}</h3><p>${s.d}</p></div><div class="yd"><b>${s.y}</b><span>${s.l}</span></div></div></div></div>`).join("");
+document.querySelectorAll(".card").forEach((c) => {
+  c.addEventListener("click", () => c.classList.toggle("flip"));
+  c.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); c.classList.toggle("flip"); } });
+});
+</script>
+<script>
+// subnav: sit under the main nav, and highlight the section in view
+const topnav = document.querySelector("nav"), sub = document.querySelector(".subnav");
+const setNavH = () => document.documentElement.style.setProperty("--navh", topnav.offsetHeight + "px");
+setNavH(); addEventListener("resize", setNavH);
+const subLinks = [...sub.querySelectorAll("a")];
+const spy = new IntersectionObserver((es) => es.forEach((e) => { if (!e.isIntersecting) return;
+  subLinks.forEach((a) => a.classList.toggle("on", a.hash === "#" + e.target.id));
+  const on = sub.querySelector("a.on"), row = sub.firstElementChild;
+  if (on && row.scrollWidth > row.clientWidth) row.scrollTo({ left: on.offsetLeft - 24, behavior: "smooth" });
+}), { rootMargin: "-45% 0px -50% 0px" });
+subLinks.forEach((a) => { const t = document.querySelector(a.hash); if (t) spy.observe(t); });
+</script>
+<script src="shared/book3d.js"></script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Watch · Girls Flag Football, Illustrated</title>
+<meta name="description" content="Girls flag football, explained in pictures. Videos built from the book's drawings, based on the 2026–27 NFHS high school rules, from the Girls Flag Football Illustrated YouTube channel.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,800;0,900;1,900&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/site.css">
+<style>
+/* ---------- hero ---------- */
+.wh { position: relative; overflow: hidden; padding: 90px 0 70px; }
+.wh::before { content:""; position:absolute; inset: -30% -10% auto; height: 130%; background:
+  radial-gradient(35% 35% at 15% 10%, rgba(255,255,255,.08), transparent 70%),
+  radial-gradient(45% 45% at 75% 55%, rgba(242,106,27,.20), transparent 70%); pointer-events:none; }
+.wh .ghost.huge { position:absolute; left: 50%; top: 52%; transform: translate(-50%,-50%); font-size: clamp(160px, 26vw, 400px); }
+.wh-grid { position: relative; display:grid; grid-template-columns: 1fr 1.15fr; gap: 50px; align-items: center; }
+.wh h1 { font: 900 clamp(58px, 7vw, 104px)/.84 "Barlow Condensed"; text-transform: uppercase; margin: 16px 0 22px; }
+.wh h1 i { color: var(--orange); font-style: italic; }
+.wh p { color: var(--muted); font-size: 19px; max-width: 480px; margin: 0; }
+.ch { display:flex; align-items:center; gap: 14px; margin: 28px 0 24px; }
+.ch .av { width: 52px; height: 52px; border-radius: 50%; background: var(--orange); display:grid; place-items:center; flex: none; }
+.ch .av::before { content:""; border-left: 15px solid #fff; border-top: 9px solid transparent; border-bottom: 9px solid transparent; margin-left: 4px; }
+.ch b { display:block; font: 800 22px/1.1 "Barlow Condensed"; text-transform: uppercase; letter-spacing: .02em; }
+.ch span { color: var(--muted); font-size: 14px; word-break: break-all; }
+.ctas { display:flex; gap: 12px; flex-wrap: wrap; }
+.stats { display:flex; gap: 34px; margin-top: 34px; }
+.stats b { display:block; font: 900 44px/1 "Barlow Condensed"; color: var(--orange); }
+.stats span { font: 600 12px Inter; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+
+/* featured video */
+.fv { position: relative; display:block; aspect-ratio: 16 / 10; border-radius: 30px; border: 1px solid var(--line); overflow: hidden; background: radial-gradient(55% 60% at 70% 50%, rgba(242,106,27,.3), transparent 70%), linear-gradient(150deg, #1b1d21, #0f1012); transition: border-color .3s, transform .4s; }
+a.fv:hover { border-color: rgba(242,106,27,.6); transform: translateY(-4px); }
+.fv .num { position:absolute; right: 18px; top: -12px; font: 900 200px/.8 "Barlow Condensed"; color: transparent; -webkit-text-stroke: 2px rgba(242,106,27,.5); }
+.fv .art { position:absolute; right: 4%; bottom: 0; height: 90%; filter: drop-shadow(0 26px 30px rgba(0,0,0,.6)); }
+.fv .thumb { position:absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.fv .badge { position:absolute; left: 24px; top: 24px; font: 700 11px Inter; letter-spacing: .14em; text-transform: uppercase; background: rgba(0,0,0,.5); border: 1px solid rgba(242,106,27,.5); color: var(--orange); border-radius: 999px; padding: 6px 12px; }
+.fv .play { position:absolute; left: 42%; top: 44%; transform: translate(-50%,-50%); width: 84px; height: 84px; border-radius: 50%; background: var(--orange); display:grid; place-items:center; box-shadow: 0 14px 40px rgba(242,106,27,.45); }
+.fv .play::before, .vc .play::before { content:""; border-left: 22px solid #fff; border-top: 13px solid transparent; border-bottom: 13px solid transparent; margin-left: 6px; }
+.fv .cap { position:absolute; left: 24px; right: 24px; bottom: 22px; display:flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+.fv .cap b { font: 900 clamp(30px, 3.2vw, 44px)/.92 "Barlow Condensed"; text-transform: uppercase; max-width: 60%; }
+.fv .cap small { color: var(--muted); font-size: 14px; }
+
+/* nfhs note */
+.nfhs { display:grid; grid-template-columns: auto 1fr; gap: 22px; align-items: center; border: 1px solid rgba(242,106,27,.4); border-radius: 22px; padding: 22px 26px; background: rgba(242,106,27,.06); }
+.nfhs .tag { font: 900 22px/.95 "Barlow Condensed"; color: var(--orange); text-transform: uppercase; text-align: center; border-right: 1px solid rgba(242,106,27,.4); padding-right: 22px; }
+.nfhs span { color: var(--muted); font-size: 15px; }
+.nfhs strong { color: var(--txt); }
+
+section { padding: 100px 0; }
+.sec-head { display:flex; justify-content: space-between; align-items: end; gap: 30px; flex-wrap: wrap; }
+.sec-head h2 { font: 900 clamp(44px, 5.4vw, 80px)/.92 "Barlow Condensed"; text-transform: uppercase; margin: 12px 0 0; }
+.sec-head h2 i { color: var(--orange); font-style: italic; }
+.sec-head p { color: var(--muted); max-width: 440px; margin: 0; }
+
+/* only on the channel */
+.extras { display:grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 24px; overflow: hidden; margin-top: 46px; }
+.ex { background: var(--bg); padding: 26px 22px 28px; min-height: 260px; display:flex; flex-direction: column; justify-content: space-between; transition: background .3s; }
+.ex:hover { background: var(--bg2); }
+.ex .n { font: 900 100px/.78 "Barlow Condensed"; color: transparent; -webkit-text-stroke: 1.5px rgba(255,255,255,.18); transition: color .35s, -webkit-text-stroke-color .35s; }
+.ex:hover .n { color: var(--orange); -webkit-text-stroke-color: var(--orange); }
+.ex b { font: 900 26px/1 "Barlow Condensed"; text-transform: uppercase; display:block; }
+.ex span { color: var(--muted); font-size: 14px; display:block; margin-top: 8px; line-height: 1.5; }
+
+/* book / app / channel */
+.trio { display:grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 46px; }
+.tr { border: 1px solid var(--line); border-radius: 24px; padding: 30px 28px; background: var(--bg2); display:flex; flex-direction: column; gap: 10px; }
+.tr.on { border-color: var(--orange); box-shadow: 0 0 0 1px var(--orange), 0 30px 80px rgba(242,106,27,.14); }
+.tr .k { font: 700 12px Inter; letter-spacing: .18em; text-transform: uppercase; color: var(--orange); display:flex; gap: 10px; align-items: center; }
+.tr h3 { font: 900 34px/.95 "Barlow Condensed"; text-transform: uppercase; margin: 4px 0 2px; }
+.tr p { color: var(--muted); font-size: 15px; margin: 0; flex: 1; }
+.tr a { font: 700 14px Inter; color: var(--orange); margin-top: 8px; }
+
+/* series grid */
+.tabs { display:flex; gap: 8px; margin-top: 30px; flex-wrap: wrap; }
+.tabs button { border: 1px solid var(--line); background: var(--bg2); border-radius: 999px; padding: 9px 16px; cursor: pointer; font: 600 13px Inter; }
+.tabs button.on { background: var(--orange); border-color: var(--orange); }
+.grid { display:grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 26px; }
+.vc { position: relative; display:flex; flex-direction: column; border: 1px solid var(--line); border-radius: 24px; background: var(--bg2); overflow: hidden; transition: border-color .3s, transform .4s; }
+.vc:hover { border-color: rgba(242,106,27,.5); transform: translateY(-4px); }
+.vc .shot { position: relative; aspect-ratio: 16 / 9; display:flex; align-items:flex-end; justify-content:center; background: radial-gradient(55% 70% at 50% 75%, rgba(242,106,27,.24), transparent 70%), linear-gradient(160deg, #1f2226, #121316); border-bottom: 1px solid var(--line); overflow: hidden; }
+.vc .shot img { position: relative; max-height: 88%; max-width: 70%; filter: grayscale(1) contrast(1.08) drop-shadow(0 16px 18px rgba(0,0,0,.55)); transition: filter .45s, transform .45s; }
+.vc .shot img.thumb { position:absolute; inset: 0; width: 100%; height: 100%; max-width: none; max-height: none; object-fit: cover; filter: none; }
+.vc:hover .shot img { filter: grayscale(0) drop-shadow(0 16px 18px rgba(0,0,0,.55)); transform: translateY(-4px); }
+.vc .vn { position:absolute; left: 14px; top: 10px; font: 900 54px/.8 "Barlow Condensed"; color: transparent; -webkit-text-stroke: 1.5px rgba(255,255,255,.2); }
+.vc .len { position:absolute; right: 12px; bottom: 12px; font: 700 11px Inter; letter-spacing: .12em; text-transform: uppercase; background: rgba(0,0,0,.6); border-radius: 6px; padding: 4px 8px; }
+.vc .play { position:absolute; left: 50%; top: 45%; transform: translate(-50%,-50%) scale(.6); width: 70px; height: 70px; border-radius: 50%; background: var(--orange); display:grid; place-items:center; opacity: 0; transition: opacity .3s, transform .3s; }
+.vc.live:hover .play { opacity: 1; transform: translate(-50%,-50%) scale(1); }
+.vc .body { padding: 20px 22px 22px; display:flex; flex-direction: column; flex: 1; }
+.vc h3 { font: 900 26px/.98 "Barlow Condensed"; text-transform: uppercase; margin: 12px 0 8px; }
+.vc p { color: var(--muted); font-size: 14.5px; margin: 0; }
+.vc .foot { margin-top: auto; padding-top: 18px; display:flex; justify-content: space-between; gap: 10px; font: 600 13px Inter; color: var(--muted); }
+.vc .foot a { color: var(--orange); }
+.vc.hide { display:none; }
+
+/* book strip */
+.strip { position: relative; overflow: hidden; border: 1px solid var(--line); border-radius: 30px; padding: 56px; background: linear-gradient(120deg, #1d1f23, #121316); display:grid; grid-template-columns: 1.3fr 1fr; gap: 40px; align-items: center; }
+.strip .ghost { position:absolute; left: -10px; bottom: -30px; font-size: 200px; }
+.strip h2 { position: relative; font: 900 clamp(40px, 4.6vw, 64px)/.92 "Barlow Condensed"; text-transform: uppercase; margin: 10px 0 12px; }
+.strip h2 i { color: var(--orange); font-style: italic; }
+.strip p { position: relative; color: var(--muted); margin: 0 0 24px; }
+.strip .cover { position: relative; justify-self: center; width: min(280px, 70%); transform: rotate(4deg); box-shadow: 0 40px 70px rgba(0,0,0,.6); border-radius: 4px; }
+
+@media (max-width: 980px) {
+  .wh { padding: 50px 0 40px; }
+  .wh-grid { grid-template-columns: 1fr; }
+  .stats { gap: 20px; }
+  .stats b { font-size: 32px; white-space: nowrap; }
+  .stats span { font-size: 10px; letter-spacing: .1em; }
+  .fv { aspect-ratio: 4 / 3; }
+  .fv .num { font-size: 130px; }
+  .fv .play { width: 60px; height: 60px; left: 40%; top: 38%; }
+  .fv .cap b { font-size: 26px; max-width: 70%; }
+  .fv .cap small { display:none; }
+  .nfhs { grid-template-columns: 1fr; gap: 12px; }
+  .nfhs .tag { border-right: 0; padding-right: 0; text-align: left; }
+  .extras { grid-template-columns: 1fr 1fr; }
+  .ex { min-height: 220px; padding: 20px 18px; }
+  .ex .n { font-size: 72px; }
+  .ex b { font-size: 22px; }
+  .trio, .grid { grid-template-columns: 1fr; }
+  .strip { grid-template-columns: 1fr; padding: 34px 26px; }
+  section { padding: 70px 0; }
+}
+@media (max-width: 480px) { .extras { grid-template-columns: 1fr; } .ex { min-height: 0; gap: 18px; } }
+</style>
+</head>
+<body>
+<nav class="top"><div class="wrap"><a class="brand" href="../">Girls Flag Football, <b>Illustrated</b></a>
+  <div class="nl"><a href="../">Book</a><a class="on" href="./">Watch</a><a href="../blog/">Field Notes</a></div>
+  <a class="btn sm" href="../#buy">Get the book</a></div></nav>
+
+<header class="wh">
+  <div class="ghost huge">Watch</div>
+  <div class="wrap wh-grid">
+    <div class="reveal in">
+      <div class="eyebrow">On YouTube</div>
+      <h1>Explained<br><i>in pictures.</i></h1>
+      <p>The book's drawings, animated. Each video takes one rule or question from the 2026–27 NFHS high school rules and walks through it, play by play.</p>
+      <div class="ch"><span class="av"></span><div><b>Girls Flag Football Illustrated</b><span>@GirlsFlagFootballIllustrated</span></div></div>
+      <div class="ctas"><a class="btn" href="https://www.youtube.com/@GirlsFlagFootballIllustrated?sub_confirmation=1" target="_blank" rel="noopener">Subscribe on YouTube</a><a class="btn line" href="../#buy">Get the book</a></div>
+      <div class="stats"><div><b>12</b><span>Videos planned</span></div><div><b>38</b><span>Signals drawn</span></div><div><b>26–27</b><span>NFHS rules</span></div></div>
+    </div>
+    <div class="reveal in" id="featured"></div>
+  </div>
+</header>
+
+<div class="wrap"><div class="nfhs reveal in"><b class="tag">NFHS<br>26–27</b><span>Every video is based on the <strong>2026–27 NFHS Flag Football Rules</strong>, the official rules for high school girls flag football. NFL FLAG and many youth and rec leagues play by different rules, and your state can adopt a few of its own.</span></div></div>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal"><div><div class="eyebrow">Only on the channel</div><h2>See the play <i>happen.</i></h2></div><p>The book shows you the moment. The videos show you everything around it.</p></div>
+    <div class="extras reveal">
+      <div class="ex"><span class="n">01</span><div><b>Plays in motion</b><span>The book's field diagrams, animated, so you see where every player goes before and after the snap.</span></div></div>
+      <div class="ex"><span class="n">02</span><div><b>Chalkboard breakdowns</b><span>One play drawn out step by step, with the rule called out as it happens.</span></div></div>
+      <div class="ex"><span class="n">03</span><div><b>What's the call?</b><span>Every video ends on a freeze-frame. Pause, make the call, then hear the answer.</span></div></div>
+      <div class="ex"><span class="n">04</span><div><b>Shorts</b><span>One "Can you…?" question in under a minute. Easy to send to a parent group or a team chat.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="series" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="sec-head reveal"><div><div class="eyebrow">The series</div><h2>Every video. <i>One place.</i></h2></div><p>New videos land here as they go up on YouTube. Each one links to the matching Field Notes post when there is one.</p></div>
+    <div class="tabs reveal" id="tabs"><button class="on" data-k="">All</button><button data-k="L">Full videos</button><button data-k="S">Shorts</button></div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal"><div><div class="eyebrow">Book, app or video?</div><h2>Pick the right <i>tool.</i></h2></div></div>
+    <div class="trio">
+      <div class="tr on reveal"><div class="k">The book</div><h3>Every rule, in full.</h3><p>All 10 rules of the 2026–27 NFHS game in plain words, all 38 signals drawn, and 45 "You make the call" situations. Read it before the season, keep it in the bag on game day.</p><a href="../#buy">Get the book →</a></div>
+      <div class="tr reveal"><div class="k">The iPhone app <span class="soon">Coming soon</span></div><h3>Answers on the sideline.</h3><p>Look up a signal by number or by what the referee is doing, find a penalty by yardage, and test yourself between games.</p><a href="../#soon">See what's coming →</a></div>
+      <div class="tr reveal"><div class="k">The channel</div><h3>Watch it move.</h3><p>Plays animated from the book's drawings, one rule at a time. Free on YouTube, and a good place to start if you're brand new.</p><a href="https://www.youtube.com/@GirlsFlagFootballIllustrated" target="_blank" rel="noopener">Go to the channel →</a></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="strip reveal">
+      <div class="ghost">The book</div>
+      <div><div class="eyebrow">Every drawing is from the book</div><h2>Rather read it? <i>It's all in here.</i></h2><p>Every rule in these videos, plus all the ones we skipped, is in Girls Flag Football, Illustrated. 208 full-color pages on the 2026–27 NFHS rules.</p><div class="ctas"><a class="btn" href="../#buy">Get the book</a><a class="btn line" href="../#inside">Look inside</a></div></div>
+      <img class="cover" src="../assets/cover-front.jpg" alt="Girls Flag Football, Illustrated book cover">
+    </div>
+  </div>
+</section>
+
+<footer class="site"><div class="wrap"><span>© 2026 Craig Clayton · Rule references: 2026–27 NFHS Flag Football Rules. Not affiliated with or endorsed by the NFHS.</span><a href="../">Back to the book →</a></div></footer>
+
+<script>
+// To publish a video: put its YouTube id in `yt`. The card then links to YouTube and uses the YouTube thumbnail.
+// `post` is the matching Field Notes post folder, if there is one.
+const VIDEOS = [
+  { n: "01", type: "L", t: "How to Play Girls Flag Football", d: "Explained for beginners: the field, the snap, pulling flags, downs and scoring.", img: "girl-passer.png", yt: "", post: "how-to-play-girls-flag-football/" },
+  { n: "03", type: "L", t: "Girls Flag Football Positions Explained", d: "Who lines up where, and what each player is trying to do.", img: "girl-quarterback.png", yt: "" },
+  { n: "09", type: "L", t: "Every Referee Signal in Girls Flag Football", d: "All 38 official signals, drawn and explained.", img: "sig-33.png", yt: "" },
+  { n: "06", type: "S", t: "What to Wear to Flag Football", d: "Head to toe, before tryouts.", img: "player-legal.png", yt: "" },
+  { n: "10", type: "S", t: "How Downs Work in Flag Football", d: "Four downs, the zone to gain, and what resets it.", img: "sig-08.png", yt: "" },
+  { n: "02", type: "S", t: "Can You Block in Flag Football?", d: "The one kind of block that's legal.", img: "girl-runner.png", yt: "" },
+  { n: "05", type: "S", t: "Can You Rush the Quarterback?", d: "Who can rush, and from where.", img: "girl-defender.png", yt: "" },
+  { n: "08", type: "S", t: "Can You Stiff Arm?", d: "Flag guarding, explained.", img: "girl-carrier.png", yt: "" },
+  { n: "11", type: "L", t: "Your Daughter's First Game: What to Expect", d: "For parents in the stands for the first time.", img: "girl-scorer.png", yt: "" },
+  { n: "04", type: "S", t: "Is Punting Legal in Flag Football?", d: "Yes, but you have to declare it first.", img: "girl-kicker.png", yt: "", post: "is-punting-legal-in-girls-flag-football/" },
+  { n: "07", type: "L", t: "Shift vs. Motion: Legal or Illegal?", d: "Five plays. Make the call on each one.", img: "sig-18.png", yt: "" },
+  { n: "12", type: "S", t: "Flag Football in the 2028 Olympics", d: "What's happening, and what it means for the high school game.", img: "girl-passer.png", yt: "" },
+];
+const watch = (v) => `https://www.youtube.com/watch?v=${v.yt}`;
+const thumb = (v) => `https://img.youtube.com/vi/${v.yt}/hqdefault.jpg`;
+
+const f = VIDEOS[0], fl = !!f.yt;
+document.getElementById("featured").innerHTML = `<${fl ? `a href="${watch(f)}" target="_blank" rel="noopener"` : `a href="../blog/${f.post}"`} class="fv">
+  <span class="num">${f.n}</span>${fl ? `<img class="thumb" src="${thumb(f)}" alt="">` : `<img class="art" src="../assets/${f.img}" alt="">`}
+  <span class="badge">2026–27 NFHS rules</span><span class="play"></span>
+  <span class="cap"><span class="soon">${fl ? "Watch on YouTube" : `Video ${f.n} · Coming soon`}</span><b>${f.t}</b><small>${fl ? f.d : "Read the guide while you wait →"}</small></span></a>`;
+
+const grid = document.getElementById("grid");
+grid.innerHTML = VIDEOS.map((v) => {
+  const live = !!v.yt;
+  return `<div class="vc reveal${live ? " live" : ""}" data-k="${v.type}">
+    <${live ? `a href="${watch(v)}" target="_blank" rel="noopener"` : "div"} class="shot">${live ? `<img class="thumb" src="${thumb(v)}" alt="">` : `<img src="../assets/${v.img}" alt="">`}<span class="vn">${v.n}</span><span class="len">${v.type === "L" ? "Full video" : "Short"}</span><span class="play"></span></${live ? "a" : "div"}>
+    <div class="body"><div>${live ? "" : '<span class="soon">Coming soon</span>'}</div><h3>${v.t}</h3><p>${v.d}</p>
+    <div class="foot">${live ? `<a href="${watch(v)}" target="_blank" rel="noopener">Watch on YouTube →</a>` : "<span>Subscribe to catch it</span>"}${v.post ? `<a href="../blog/${v.post}">Read the post →</a>` : ""}</div></div></div>`;
+}).join("");
+document.querySelectorAll("#tabs button").forEach((b) => b.onclick = () => {
+  document.querySelectorAll("#tabs button").forEach((x) => x.classList.toggle("on", x === b));
+  grid.querySelectorAll(".vc").forEach((c) => c.classList.toggle("hide", !!b.dataset.k && c.dataset.k !== b.dataset.k));
+});
+</script>
+<script src="../shared/book3d.js"></script>
+</body>
+</html>
