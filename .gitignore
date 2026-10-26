@@ -1,1 +1,10 @@
 .DS_Store
+
+# Drafts: kept on this computer only, never pushed.
+# blog/posts.local.json holds drafts and the full entry of any post marked "soon" in posts.json;
+# each draft folder is listed below.
+# To publish a post: put its full entry in posts.json (no "soon"), drop it from posts.local.json, delete its folder line here,
+# and add it to sitemap.xml.
+blog/posts.local.json
+blog/is-punting-legal-in-girls-flag-football/
+blog/how-to-play-girls-flag-football/

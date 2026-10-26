@@ -1,0 +1,51 @@
+/* Light (cream) mode for every page. Dark is the default; reader/site.js sets html[data-theme="light"].
+   The pages use CSS variables for most colors, so this file swaps those and then fixes the few
+   hardcoded dark colors (nav glass, outlined ghost numbers, dark card gradients). */
+
+html[data-theme="light"] { --bg:#f6f0e4; --bg2:#eee6d6; --bg3:#e5dbc8; --line:#d9ccb5; --txt:#1c1a16; --muted:#6c6457; color-scheme: light; }
+
+/* theme switch in the nav */
+.tbtn { flex: none; width: 38px; height: 38px; border-radius: 50%; border: 1px solid var(--line); background: transparent; color: var(--muted); display:grid; place-items:center; cursor: pointer; padding: 0; transition: color .2s, border-color .2s; }
+.tbtn:hover { color: var(--txt); border-color: var(--muted); }
+.tbtn svg { width: 18px; height: 18px; }
+.tbtn .sun, html[data-theme="light"] .tbtn .moon { display: none; }
+html[data-theme="light"] .tbtn .sun { display: block; }
+.nav-end { display:flex; align-items:center; gap: 12px; }
+@media (max-width: 980px) {
+  .nav-end { gap: 8px; }
+  .tbtn { width: 34px; height: 34px; }
+  nav .brand { max-width: 150px; font-size: 15px; }
+}
+
+/* nav glass */
+html[data-theme="light"] nav { background: rgba(246,240,228,.86); }
+html[data-theme="light"] .subnav { background: rgba(246,240,228,.92); }
+
+/* outlines and dashed borders */
+html[data-theme="light"] .btn.line { color: var(--txt); }
+html[data-theme="light"] .book-ctrl { --btn-on: #f6f0e4; }
+html[data-theme="light"] .btn.line, html[data-theme="light"] .soon, html[data-theme="light"] .fn-soon { border-color: #c8baa2; }
+html[data-theme="light"] :is(.ghost, .bigword, .fn-ghost, .cs-card > .cs-gh, .post .pn, .rp .pn) { -webkit-text-stroke-color: rgba(28,26,22,.09); }
+html[data-theme="light"] .fn-n { -webkit-text-stroke-color: rgba(28,26,22,.12); }
+html[data-theme="light"] .fn-card.big .fn-n { -webkit-text-stroke-color: rgba(242,106,27,.6); }
+html[data-theme="light"] .fn-card:hover .fn-n { -webkit-text-stroke-color: transparent; }
+html[data-theme="light"] :is(.ex .n, .pil .n, .vc .vn) { -webkit-text-stroke-color: rgba(28,26,22,.2); }
+html[data-theme="light"] .pil:disabled:hover .n { -webkit-text-stroke-color: rgba(28,26,22,.2); }
+
+/* dark gradient cards become cream gradient cards */
+html[data-theme="light"] :is(.editor, .cs-card, .strip, .bookbox, .feat) { background: linear-gradient(130deg, var(--bg2), var(--bg3)); }
+html[data-theme="light"] .card .b { background: linear-gradient(160deg, var(--bg2), var(--bg3)); }
+html[data-theme="light"] .dykc .card .f, html[data-theme="light"] #dyk .card .f { background: radial-gradient(60% 45% at 50% 42%, rgba(242,106,27,.22), transparent 70%), linear-gradient(180deg, var(--bg2), var(--bg)); }
+html[data-theme="light"] .fv { background: radial-gradient(55% 60% at 70% 50%, rgba(242,106,27,.25), transparent 70%), linear-gradient(150deg, var(--bg2), var(--bg3)); }
+html[data-theme="light"] .vc .shot { background: radial-gradient(55% 70% at 50% 75%, rgba(242,106,27,.2), transparent 70%), linear-gradient(160deg, var(--bg2), var(--bg3)); }
+html[data-theme="light"] .fv .badge { background: rgba(255,255,255,.75); }
+html[data-theme="light"] .vc .len { color: #fff; }
+html[data-theme="light"] .fn-pill { background: rgba(255,255,255,.6); }
+
+/* softer shadows under art on a light page */
+html[data-theme="light"] :is(.feat img, .fv .art, .ph-art img, .stage .front-girl, .stage .behind) { filter: drop-shadow(0 22px 22px rgba(60,40,20,.28)); }
+
+/* article text on the posts */
+html[data-theme="light"] article { color: #2a2722; }
+html[data-theme="light"] article strong, html[data-theme="light"] .list li strong { color: #000; }
+html[data-theme="light"] .toc a b { color: #b3a690; }

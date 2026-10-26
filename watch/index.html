@@ -3,11 +3,25 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Watch · Girls Flag Football, Illustrated</title>
-<meta name="description" content="Girls flag football, explained in pictures. Videos built from the book's drawings, based on the 2026–27 NFHS high school rules, from the Girls Flag Football Illustrated YouTube channel.">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<title>Girls Flag Football Videos: The Rules in Pictures</title>
+<meta name="description" content="Girls flag football explained in pictures: short videos built from the book's drawings, on the 2026–27 NFHS high school rules.">
+<link rel="canonical" href="https://flagfootballillustrated.com/watch/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Girls Flag Football, Illustrated">
+<meta property="og:title" content="Girls Flag Football Videos: The Rules in Pictures">
+<meta property="og:description" content="Girls flag football explained in pictures: short videos built from the book's drawings, on the 2026–27 NFHS high school rules.">
+<meta property="og:url" content="https://flagfootballillustrated.com/watch/">
+<meta property="og:image" content="https://flagfootballillustrated.com/assets/cover-front.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Girls Flag Football Videos: The Rules in Pictures">
+<meta name="twitter:description" content="Girls flag football explained in pictures: short videos built from the book's drawings, on the 2026–27 NFHS high school rules.">
+<meta name="twitter:image" content="https://flagfootballillustrated.com/assets/cover-front.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,800;0,900;1,900&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../shared/site.css">
+<link rel="stylesheet" href="../shared/theme.css">
+<script src="../shared/site.js"></script>
 <style>
 /* ---------- hero ---------- */
 .wh { position: relative; overflow: hidden; padding: 90px 0 70px; }
@@ -193,7 +207,7 @@ section { padding: 100px 0; }
 
 <script>
 // To publish a video: put its YouTube id in `yt`. The card then links to YouTube and uses the YouTube thumbnail.
-// `post` is the matching Field Notes post folder, if there is one.
+// `post` is the matching Field Notes post folder, if there is one. The link only shows if that post is in blog/posts.json (or posts.local.json on this computer).
 const VIDEOS = [
   { n: "01", type: "L", t: "How to Play Girls Flag Football", d: "Explained for beginners: the field, the snap, pulling flags, downs and scoring.", img: "girl-passer.png", yt: "", post: "how-to-play-girls-flag-football/" },
   { n: "03", type: "L", t: "Girls Flag Football Positions Explained", d: "Who lines up where, and what each player is trying to do.", img: "girl-quarterback.png", yt: "" },
@@ -212,18 +226,25 @@ const watch = (v) => `https://www.youtube.com/watch?v=${v.yt}`;
 const thumb = (v) => `https://img.youtube.com/vi/${v.yt}/hqdefault.jpg`;
 
 const f = VIDEOS[0], fl = !!f.yt;
-document.getElementById("featured").innerHTML = `<${fl ? `a href="${watch(f)}" target="_blank" rel="noopener"` : `a href="../blog/${f.post}"`} class="fv">
-  <span class="num">${f.n}</span>${fl ? `<img class="thumb" src="${thumb(f)}" alt="">` : `<img class="art" src="../assets/${f.img}" alt="">`}
+const channel = "https://www.youtube.com/@GirlsFlagFootballIllustrated";
+document.getElementById("featured").innerHTML = `<${fl ? `a href="${watch(f)}" target="_blank" rel="noopener"` : `a href="${channel}" target="_blank" rel="noopener"`} class="fv">
+  <span class="num">${f.n}</span>${fl ? `<img class="thumb" src="${thumb(f)}" alt="${f.t}: video thumbnail">` : `<img class="art" src="../assets/${f.img}" alt="${altFor(f.img)}">`}
   <span class="badge">2026–27 NFHS rules</span><span class="play"></span>
-  <span class="cap"><span class="soon">${fl ? "Watch on YouTube" : `Video ${f.n} · Coming soon`}</span><b>${f.t}</b><small>${fl ? f.d : "Read the guide while you wait →"}</small></span></a>`;
+  <span class="cap"><span class="soon">${fl ? "Watch on YouTube" : `Video ${f.n} · Coming soon`}</span><b>${f.t}</b><small>${fl ? f.d : "Subscribe to catch it →"}</small></span></a>`;
+// once the matching post is live, the unreleased video's card sends people to the post instead
+postsReady.then((posts) => {
+  if (fl || !f.post || !postIsLive(posts, f.post.replace(/\/$/, ""))) return;
+  const a = document.querySelector("#featured .fv");
+  a.href = `../blog/${f.post}`; a.removeAttribute("target"); a.querySelector(".cap small").textContent = "Read the guide while you wait →";
+});
 
 const grid = document.getElementById("grid");
 grid.innerHTML = VIDEOS.map((v) => {
   const live = !!v.yt;
   return `<div class="vc reveal${live ? " live" : ""}" data-k="${v.type}">
-    <${live ? `a href="${watch(v)}" target="_blank" rel="noopener"` : "div"} class="shot">${live ? `<img class="thumb" src="${thumb(v)}" alt="">` : `<img src="../assets/${v.img}" alt="">`}<span class="vn">${v.n}</span><span class="len">${v.type === "L" ? "Full video" : "Short"}</span><span class="play"></span></${live ? "a" : "div"}>
+    <${live ? `a href="${watch(v)}" target="_blank" rel="noopener"` : "div"} class="shot">${live ? `<img class="thumb" src="${thumb(v)}" alt="${v.t}: video thumbnail">` : `<img src="../assets/${v.img}" alt="${altFor(v.img)}">`}<span class="vn">${v.n}</span><span class="len">${v.type === "L" ? "Full video" : "Short"}</span><span class="play"></span></${live ? "a" : "div"}>
     <div class="body"><div>${live ? "" : '<span class="soon">Coming soon</span>'}</div><h3>${v.t}</h3><p>${v.d}</p>
-    <div class="foot">${live ? `<a href="${watch(v)}" target="_blank" rel="noopener">Watch on YouTube →</a>` : "<span>Subscribe to catch it</span>"}${v.post ? `<a href="../blog/${v.post}">Read the post →</a>` : ""}</div></div></div>`;
+    <div class="foot">${live ? `<a href="${watch(v)}" target="_blank" rel="noopener">Watch on YouTube →</a>` : "<span>Subscribe to catch it</span>"}${v.post ? `<a href="../blog/${v.post}" data-post="${v.post.replace(/\/$/, "")}">Read the post →</a>` : ""}</div></div></div>`;
 }).join("");
 document.querySelectorAll("#tabs button").forEach((b) => b.onclick = () => {
   document.querySelectorAll("#tabs button").forEach((x) => x.classList.toggle("on", x === b));

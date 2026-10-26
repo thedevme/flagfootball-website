@@ -3,11 +3,28 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Field Notes · Girls Flag Football, Illustrated</title>
-<meta name="description" content="Coaching, players, parents, rules and signals: field notes on high school girls flag football from the author of Girls Flag Football, Illustrated.">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<title>Girls Flag Football Blog: Rules, Coaching and Parents</title>
+<meta name="description" content="Girls flag football rules, coaching, players and parents, explained under the 2026–27 NFHS high school rules by the author of Girls Flag Football, Illustrated.">
+<link rel="canonical" href="https://flagfootballillustrated.com/blog/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Girls Flag Football, Illustrated">
+<meta property="og:title" content="Field Notes: The Girls Flag Football Blog">
+<meta property="og:description" content="Girls flag football rules, coaching, players and parents, explained under the 2026–27 NFHS high school rules by the author of Girls Flag Football, Illustrated.">
+<meta property="og:url" content="https://flagfootballillustrated.com/blog/">
+<meta property="og:image" content="https://flagfootballillustrated.com/assets/cover-front.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Field Notes: The Girls Flag Football Blog">
+<meta name="twitter:description" content="Girls flag football rules, coaching, players and parents, explained under the 2026–27 NFHS high school rules by the author of Girls Flag Football, Illustrated.">
+<meta name="twitter:image" content="https://flagfootballillustrated.com/assets/cover-front.jpg">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "Blog", "name": "Field Notes", "description": "Girls flag football rules, coaching, players and parents, explained under the 2026–27 NFHS high school rules by the author of Girls Flag Football, Illustrated.", "url": "https://flagfootballillustrated.com/blog/", "inLanguage": "en-US", "author": {"@type": "Person", "name": "Craig Clayton", "url": "https://flagfootballillustrated.com/", "sameAs": ["https://www.youtube.com/@GirlsFlagFootballIllustrated"]}, "mentions": {"@type": "Book", "name": "Girls Flag Football, Illustrated", "isbn": "9798162802600", "author": {"@type": "Person", "name": "Craig Clayton"}, "url": "https://flagfootballillustrated.com/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://flagfootballillustrated.com/"}, {"@type": "ListItem", "position": 2, "name": "Field Notes", "item": "https://flagfootballillustrated.com/blog/"}]}]}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,800;0,900;1,900&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../shared/site.css">
+<link rel="stylesheet" href="../shared/theme.css">
+<script src="../shared/site.js"></script>
 <style>
 /* ---------- hero ---------- */
 .bh { position: relative; overflow: hidden; padding: 90px 0 70px; }
@@ -51,6 +68,9 @@ section { padding: 100px 0; }
 .pil b { font: 900 24px/1 "Barlow Condensed"; text-transform: uppercase; display:block; }
 .pil span { color: var(--muted); font-size: 13px; display:block; margin-top: 6px; line-height: 1.4; }
 .pil .c { position:absolute; top: 18px; right: 18px; font: 700 11px Inter; letter-spacing: .12em; color: var(--muted); }
+.pil:disabled { cursor: default; opacity: .5; }
+.pil:disabled:hover { background: var(--bg); }
+.pil:disabled:hover .n { color: transparent; -webkit-text-stroke-color: rgba(255,255,255,.18); }
 .filters-note { color: var(--muted); font-size: 14px; margin-top: 16px; min-height: 22px; }
 .filters-note button { all: unset; cursor: pointer; color: var(--orange); font-weight: 600; margin-left: 8px; }
 
@@ -71,13 +91,15 @@ section { padding: 100px 0; }
 .post.hide { display:none; }
 
 /* parent guide strip */
-.strip { position: relative; overflow: hidden; border: 1px solid var(--line); border-radius: 30px; padding: 56px; background: linear-gradient(120deg, #1d1f23, #121316); display:grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: center; }
+.strip { position: relative; overflow: hidden; border: 1px solid var(--line); border-radius: 30px; padding: 56px; background: linear-gradient(120deg, #1d1f23, #121316); display:grid; grid-template-columns: 170px 1.2fr 1fr; gap: 40px; align-items: center; }
 .strip .ghost { position:absolute; left: -10px; bottom: -30px; font-size: 200px; }
 .strip h2 { position: relative; font: 900 clamp(40px, 4.6vw, 64px)/.92 "Barlow Condensed"; text-transform: uppercase; margin: 10px 0 12px; }
 .strip h2 i { color: var(--orange); font-style: italic; }
 .strip p { position: relative; color: var(--muted); margin: 0; }
 .strip form { position: relative; display:flex; gap: 10px; flex-wrap: wrap; }
 .strip input { flex: 1 1 220px; padding: 15px 20px; border-radius: 999px; border: 1px solid var(--line); background: var(--bg); color: var(--txt); font: inherit; }
+.strip .pg-cover { position: relative; width: 170px; border-radius: 4px; transform: rotate(-3deg); box-shadow: 0 28px 50px rgba(0,0,0,.6); }
+.strip .pg-sub { position: relative; font: italic 22px/1.25 "Instrument Serif", serif; margin: 0 0 12px; }
 .strip small { position: relative; display:block; color: var(--muted); font-size: 12px; margin-top: 10px; }
 
 @media (max-width: 980px) {
@@ -92,6 +114,7 @@ section { padding: 100px 0; }
   .pil .n { font-size: 84px; }
   .grid { grid-template-columns: 1fr; }
   .strip { grid-template-columns: 1fr; padding: 34px 26px; }
+  .strip .pg-cover { width: 140px; }
   section { padding: 70px 0; }
 }
 </style>
@@ -105,19 +128,19 @@ section { padding: 100px 0; }
   <div class="ghost huge">Field Notes</div>
   <div class="wrap bh-grid">
     <div class="reveal in">
-      <div class="eyebrow">The blog</div>
+      <div class="eyebrow">The girls flag football blog</div>
       <h1>Field<br><i>Notes.</i></h1>
       <p>Rules, coaching, players and parents. Everything around the game of girls flag football, one post at a time.</p>
-      <div class="stats"><div><b>06</b><span>Topics</span></div><div><b>12</b><span>Posts planned</span></div><div><b>1×</b><span>New every week</span></div></div>
+      <div class="stats"><div><b>06</b><span>Topics</span></div><div><b id="nposts">02</b><span>Posts</span></div><div><b>1×</b><span>New every week</span></div></div>
     </div>
-    <a class="feat reveal in" href="is-punting-legal-in-girls-flag-football/">
-      <div class="glow"></div><div class="num">01</div>
-      <img src="../assets/girl-kicker.png" alt="">
+    <a class="feat reveal in" href="how-to-play-girls-flag-football/">
+      <div class="glow"></div><div class="num">02</div>
+      <img src="../assets/girl-passer.png" alt="A girls flag football quarterback holding the ball, ready to pass">
       <div class="txt">
         <span class="lbl">Featured</span>
-        <span class="pill"><b>04</b> Rules &amp; Signals</span>
-        <h2>Is punting legal in girls flag football?</h2>
-        <p>Yes, but there's a catch. How to declare it, the 5-second rule, and what happens to the ball.</p>
+        <span class="pill"><b>03</b> Parents</span>
+        <h2>How to play girls flag football: a beginner's guide</h2>
+        <p>The field, the snap, pulling flags, downs, scoring and no contact, under the 2026–27 NFHS rules.</p>
         <span class="go">Read the post <span>→</span></span>
       </div>
     </a>
@@ -135,7 +158,7 @@ section { padding: 100px 0; }
 <section id="posts">
   <div class="wrap">
     <div class="sec-head reveal"><div><div class="eyebrow">Latest</div><h2>From the <i>field.</i></h2></div></div>
-    <div class="grid" id="grid"></div>
+    <div class="grid" id="grid"><!-- cards come from blog/posts.json and posts.local.json --></div>
   </div>
 </section>
 
@@ -143,7 +166,8 @@ section { padding: 100px 0; }
   <div class="wrap">
     <div class="strip reveal">
       <div class="ghost">Parents</div>
-      <div><div class="eyebrow">Coming next</div><h2>The parent guide. <i>From the stands.</i></h2><p>A guide to girls flag football written by a parent, for parents. Get an email when it launches.</p></div>
+      <img class="pg-cover" src="../assets/parent-guide-cover.jpg" alt="From Home to the Stands: A Parent's Guide to Girls Flag Football, by Craig Clayton. Cover.">
+      <div><div class="eyebrow">Coming next · The parent guide</div><h2>From Home <i>to the Stands.</i></h2><div class="pg-sub">A Parent's Guide to Girls Flag Football</div><p>Written by a parent, for parents, on the 2026–27 NFHS rules. Get an email when it launches.</p></div>
       <div><form onsubmit="event.preventDefault(); this.querySelector('button').textContent='You’re on the list ✓';"><input type="email" required placeholder="Your email" aria-label="Email"><button class="btn" type="submit">Notify me</button></form><small>Preview only: signups aren't connected yet.</small></div>
     </div>
   </div>
@@ -160,33 +184,29 @@ const PILLARS = [
   { n: "05", k: "gear", t: "Gear", d: "What's legal, what's worth buying." },
   { n: "06", k: "game", t: "The Game", d: "State news, college paths, the 2028 Olympics." },
 ];
-const POSTS = [
-  { p: "rules", t: "Is punting legal in girls flag football?", d: "Yes, but you have to declare it first. The 5-second rule, and what happens to the ball.", img: "girl-kicker.png", min: 6, url: "is-punting-legal-in-girls-flag-football/" },
-  { p: "parents", t: "How to play girls flag football: a beginner's guide", d: "The field, the snap, pulling flags, downs, scoring and no contact, under the 2026–27 NFHS rules.", img: "girl-passer.png", min: 7, url: "how-to-play-girls-flag-football/" },
-  { p: "coaching", t: "The 60-minute practice plan for first-year coaches", d: "Warm-up, flag pulling, routes and a scrimmage, minute by minute.", img: "girl-quarterback.png", min: 8 },
-  { p: "parents", t: "Your daughter's first flag football season", d: "What to expect from tryouts to the last game, and what she actually needs.", img: "girl-scorer.png", min: 7 },
-  { p: "rules", t: "What is flag guarding? (And how to avoid it)", d: "The most common runner foul, and the carry that keeps it from happening.", img: "girl-carrier.png", min: 5 },
-  { p: "gear", t: "What to wear: the legal equipment checklist", d: "Mouthguard, belt, shorts with no pockets. Head to toe, rule by rule.", img: "player-legal.png", min: 6 },
-  { p: "players", t: "How to pull a flag: footwork, angles and timing", d: "Close the space, break down, and take the hip, not the jersey.", img: "girl-defender.png", min: 6 },
-  { p: "rules", t: "The 10 referee signals every parent should know", d: "Touchdown, first down, holding and seven more, drawn and explained.", img: "sig-33.png", min: 5 },
-  { p: "coaching", t: "Screen blocking: how to teach the only legal block", d: "Set early, arms in, move with the defender. Drills that work.", img: "girl-runner.png", min: 7 },
-  { p: "game", t: "Which states sanction girls flag football?", d: "The growing list, and what it means for your program.", img: "girl-passer.png", min: 4 },
-  { p: "rules", t: "NFHS vs. other flag rules: what's different", d: "Kicking, blocking, the try and more. Know which rules your league uses.", img: "sig-07.png", min: 6 },
-  { p: "players", t: "Quarterback basics: one pass, both feet behind the line", d: "Footwork, reads and the rules every passer has to know.", img: "girl-quarterback.png", min: 6 },
-  { p: "parents", t: "Watching from the stands: how to follow the game", d: "Downs, the zone to gain and the signals, explained for parents.", img: "sig-08.png", min: 5 },
-];
 const pil = document.getElementById("pillars"), grid = document.getElementById("grid"), note = document.getElementById("note");
-pil.innerHTML = PILLARS.map((x) => `<button class="pil" data-k="${x.k}"><span class="c">${POSTS.filter((p) => p.p === x.k).length} POSTS</span><span class="n">${x.n}</span><span><b>${x.t}</b><span>${x.d}</span></span></button>`).join("");
-grid.innerHTML = POSTS.map((p, i) => {
-  const P = PILLARS.find((x) => x.k === p.p), num = String(i + 1).padStart(2, "0");
-  const tag = p.url ? "a" : "div";
-  return `<${tag} class="post reveal" data-k="${p.p}" ${p.url ? `href="${p.url}"` : 'aria-disabled="true"'}>
-    <span class="pn">${num}</span>
-    <div class="meta"><span class="pill"><b>${P.n}</b> ${P.t}</span>${p.url ? "" : '<span class="soon">Coming soon</span>'}</div>
-    <div class="art"><img src="../assets/${p.img}" alt=""></div>
-    <h3>${p.t}</h3><p>${p.d}</p>
-    <div class="foot"><span>${p.min} min read</span>${p.url ? "<b>Read →</b>" : ""}</div></${tag}>`;
-}).join("");
+postsReady.then((posts) => {
+grid.innerHTML = posts.map((p) => p.soon ? `<div class="post" data-k="${p.pillar.k}">
+  <span class="pn">${p.n}</span>
+  <div class="meta"><span class="pill"><b>${p.pillar.n}</b> ${p.pillar.name}</span></div>
+  <div class="art"><img src="../assets/${p.img}" alt="${p.alt}"></div>
+  <h3>${p.title}</h3><p>${p.desc}</p>
+  <div class="foot"><span>Coming soon</span></div></div>` : `<a class="post" data-k="${p.pillar.k}" href="${p.slug}/">
+  <span class="pn">${p.n}</span>
+  <div class="meta"><span class="pill"><b>${p.pillar.n}</b> ${p.pillar.name}</span></div>
+  <div class="art"><img src="../assets/${p.img}" alt="${p.alt}"></div>
+  <h3>${p.title}</h3><p>${p.desc}</p>
+  <div class="foot"><span>${p.read} min read</span><b>Read →</b></div></a>`).join("");
+const live = posts.filter((p) => !p.soon).length, np = document.getElementById("nposts");
+if (live) np.textContent = String(live).padStart(2, "0"); else np.parentNode.remove();
+// the featured card links to the post once it's live; until then it points at the channel
+const feat = document.querySelector(".feat");
+if (!postIsLive(posts, "how-to-play-girls-flag-football")) {
+  feat.href = "https://www.youtube.com/@GirlsFlagFootballIllustrated"; feat.target = "_blank"; feat.rel = "noopener";
+  feat.querySelector(".lbl").textContent = "Coming soon";
+  feat.querySelector(".go").innerHTML = "Subscribe on YouTube <span>→</span>";
+}
+pil.innerHTML = PILLARS.map((x) => { const c = grid.querySelectorAll(`.post[data-k="${x.k}"]`).length; return `<button class="pil" data-k="${x.k}"${c ? "" : " disabled"}><span class="c">${c ? `${c} POST${c > 1 ? "S" : ""}` : "SOON"}</span><span class="n">${x.n}</span><span><b>${x.t}</b><span>${x.d}</span></span></button>`; }).join("");
 let active = null;
 const apply = () => {
   pil.querySelectorAll(".pil").forEach((b) => b.classList.toggle("on", b.dataset.k === active));
@@ -196,6 +216,7 @@ const apply = () => {
   const c = document.getElementById("clear"); if (c) c.onclick = () => { active = null; apply(); };
 };
 pil.querySelectorAll(".pil").forEach((b) => b.onclick = () => { active = active === b.dataset.k ? null : b.dataset.k; apply(); document.getElementById("posts").scrollIntoView({ behavior: "smooth" }); });
+});
 </script>
 <script src="../shared/book3d.js"></script>
 </body>
