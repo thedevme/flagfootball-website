@@ -14,5 +14,21 @@
     "img": "girl-passer.png",
     "alt": "A girls flag football player throwing a pass",
     "home": "featured"
+  },
+  {
+    "slug": "is-punting-legal-in-girls-flag-football",
+    "n": "01",
+    "pillar": {
+      "n": "04",
+      "k": "rules",
+      "name": "Rules &amp; Signals"
+    },
+    "title": "Is punting legal in girls flag football?",
+    "short": "Is punting legal in girls flag football?",
+    "desc": "Yes, but you have to declare it first. The 5-second rule, and what happens to the ball.",
+    "read": 6,
+    "img": "girl-kicker.png",
+    "alt": "A girls flag football player punting the ball",
+    "home": "card"
   }
 ]
