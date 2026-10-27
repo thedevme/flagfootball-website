@@ -30,5 +30,73 @@
     "img": "girl-kicker.png",
     "alt": "A girls flag football player punting the ball",
     "home": "card"
+  },
+  {
+    "slug": "can-you-keep-the-ball-after-scoring-in-flag-football",
+    "n": "01",
+    "series": "cards",
+    "card": "keep-the-ball",
+    "pillar": {
+      "n": "RC",
+      "k": "cards",
+      "name": "Rule Cards"
+    },
+    "title": "Can you keep the ball after scoring in flag football?",
+    "short": "Can you keep the ball after scoring in flag football?",
+    "desc": "Yes, if you're still behind. Fourth down at your own 20. New for 2026–27.",
+    "read": 3,
+    "img": "girl-scorer.png",
+    "alt": "A girls flag football player holding the ball"
+  },
+  {
+    "slug": "do-you-have-to-declare-a-punt-in-flag-football",
+    "n": "02",
+    "series": "cards",
+    "card": "call-your-punt",
+    "pillar": {
+      "n": "RC",
+      "k": "cards",
+      "name": "Rule Cards"
+    },
+    "title": "Do you have to declare a punt in flag football?",
+    "short": "Do you have to declare a punt in flag football?",
+    "desc": "Yes. Tell the referee first, and once it's declared you have to kick. 5 seconds after the snap.",
+    "read": 3,
+    "img": "girl-kicker.png",
+    "alt": "A girls flag football player punting the ball"
+  },
+  {
+    "slug": "what-happens-if-your-flag-belt-falls-off",
+    "n": "03",
+    "series": "cards",
+    "card": "belt-falls-off",
+    "pillar": {
+      "n": "RC",
+      "k": "cards",
+      "name": "Rule Cards"
+    },
+    "title": "What happens if your flag belt falls off?",
+    "short": "What happens if your flag belt falls off?",
+    "desc": "The play keeps going. A one-hand touch between the shoulders and knees ends it.",
+    "read": 3,
+    "img": "girl-carrier.png",
+    "alt": "A girls flag football player running with the ball"
+  },
+  {
+    "slug": "what-is-flag-guarding-in-flag-football",
+    "n": "04",
+    "series": "cards",
+    "card": "flag-guarding",
+    "pillar": {
+      "n": "RC",
+      "k": "cards",
+      "name": "Rule Cards"
+    },
+    "title": "What is flag guarding in flag football?",
+    "short": "What is flag guarding in flag football?",
+    "desc": "The runner can't use her hand, arm or the ball to fight off a defender. 10 yards, signal 38.",
+    "read": 3,
+    "img": "girl-runner.png",
+    "alt": "A girls flag football player running, one arm out"
   }
 ]

@@ -26,7 +26,7 @@
 <meta name="twitter:description" content="Girls flag football rules, coaching, players and parents, explained under the 2026–27 NFHS high school rules by the author of Girls Flag Football, Illustrated.">
 <meta name="twitter:image" content="https://flagfootballillustrated.com/assets/cover-front.jpg">
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@graph": [{"@type": "Blog", "name": "Field Notes", "description": "Girls flag football rules, coaching, players and parents, explained under the 2026–27 NFHS high school rules by the author of Girls Flag Football, Illustrated.", "url": "https://flagfootballillustrated.com/blog/", "inLanguage": "en-US", "blogPost": [{"@type": "BlogPosting", "headline": "Flag Football Rules Explained for Beginners (2026–27 High School Rules)", "url": "https://flagfootballillustrated.com/blog/how-to-play-girls-flag-football/", "datePublished": "2026-10-26"}, {"@type": "BlogPosting", "headline": "Is Punting Legal in Girls Flag Football? (2026–27 NFHS Rules)", "url": "https://flagfootballillustrated.com/blog/is-punting-legal-in-girls-flag-football/", "datePublished": "2026-10-26"}], "author": {"@type": "Person", "name": "Craig Clayton", "url": "https://flagfootballillustrated.com/", "sameAs": ["https://www.youtube.com/@GirlsFlagFootballIllustrated"]}, "mentions": {"@type": "Book", "name": "Girls Flag Football, Illustrated", "isbn": "9798162802600", "author": {"@type": "Person", "name": "Craig Clayton"}, "url": "https://flagfootballillustrated.com/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://flagfootballillustrated.com/"}, {"@type": "ListItem", "position": 2, "name": "Field Notes", "item": "https://flagfootballillustrated.com/blog/"}]}]}
+{"@context": "https://schema.org", "@graph": [{"@type": "Blog", "name": "Field Notes", "description": "Girls flag football rules, coaching, players and parents, explained under the 2026–27 NFHS high school rules by the author of Girls Flag Football, Illustrated.", "url": "https://flagfootballillustrated.com/blog/", "inLanguage": "en-US", "blogPost": [{"@type": "BlogPosting", "headline": "Flag Football Rules Explained for Beginners (2026–27 High School Rules)", "url": "https://flagfootballillustrated.com/blog/how-to-play-girls-flag-football/", "datePublished": "2026-10-26"}, {"@type": "BlogPosting", "headline": "Is Punting Legal in Girls Flag Football? (2026–27 NFHS Rules)", "url": "https://flagfootballillustrated.com/blog/is-punting-legal-in-girls-flag-football/", "datePublished": "2026-10-26"}, {"@type": "BlogPosting", "headline": "Can You Keep the Ball After Scoring in Flag Football? (2026–27 NFHS)", "url": "https://flagfootballillustrated.com/blog/can-you-keep-the-ball-after-scoring-in-flag-football/", "datePublished": "2026-10-26"}, {"@type": "BlogPosting", "headline": "Do You Have to Declare a Punt in Flag Football? (2026–27 NFHS)", "url": "https://flagfootballillustrated.com/blog/do-you-have-to-declare-a-punt-in-flag-football/", "datePublished": "2026-10-26"}, {"@type": "BlogPosting", "headline": "What Happens If Your Flag Belt Falls Off in Flag Football? (2026–27 NFHS)", "url": "https://flagfootballillustrated.com/blog/what-happens-if-your-flag-belt-falls-off/", "datePublished": "2026-10-26"}, {"@type": "BlogPosting", "headline": "What Is Flag Guarding in Flag Football? (2026–27 NFHS Rules)", "url": "https://flagfootballillustrated.com/blog/what-is-flag-guarding-in-flag-football/", "datePublished": "2026-10-26"}], "author": {"@type": "Person", "name": "Craig Clayton", "url": "https://flagfootballillustrated.com/", "sameAs": ["https://www.youtube.com/@GirlsFlagFootballIllustrated"]}, "mentions": {"@type": "Book", "name": "Girls Flag Football, Illustrated", "isbn": "9798162802600", "author": {"@type": "Person", "name": "Craig Clayton"}, "url": "https://flagfootballillustrated.com/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://flagfootballillustrated.com/"}, {"@type": "ListItem", "position": 2, "name": "Field Notes", "item": "https://flagfootballillustrated.com/blog/"}]}]}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,800;0,900;1,900&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -67,6 +67,13 @@ section { padding: 100px 0; }
 .sec-head h2 { font: 900 clamp(44px, 5.4vw, 80px)/.92 "Barlow Condensed"; text-transform: uppercase; margin: 12px 0 0; }
 .sec-head h2 i { color: var(--orange); font-style: italic; }
 .sec-head p { color: var(--muted); max-width: 420px; margin: 0; }
+.rc-grid { display:grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
+.rc { display:block; transition: transform .3s; }
+.rc:hover { transform: translateY(-6px) rotate(-.6deg); }
+.rc img { width: 100%; height: auto; display:block; border-radius: 16px; box-shadow: 0 18px 40px rgba(0,0,0,.4); }
+.rc h3 { font: 900 22px/1 "Barlow Condensed"; text-transform: uppercase; margin: 14px 0 4px; }
+.rc p { font: 400 14px/1.45 Inter, sans-serif; color: var(--muted); margin: 0; }
+@media (max-width: 980px) { .rc-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; } }
 .pillars { display:grid; grid-template-columns: repeat(6, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 24px; overflow: hidden; margin-top: 46px; }
 .pil { all: unset; box-sizing: border-box; cursor: pointer; position: relative; background: var(--bg); padding: 22px 20px 24px; min-height: 230px; display:flex; flex-direction: column; justify-content: space-between; overflow: hidden; transition: background .3s; }
 .pil:hover, .pil.on { background: var(--bg2); }
@@ -163,6 +170,13 @@ section { padding: 100px 0; }
   </div>
 </section>
 
+<section id="rule-cards">
+  <div class="wrap">
+    <div class="sec-head reveal"><div><div class="eyebrow">Rule Cards</div><h2>One rule. <i>One card.</i></h2></div><p>Tap a card to read the rule, take the quiz and save the card for game day.</p></div>
+    <div class="rc-grid" id="rc-grid"></div>
+  </div>
+</section>
+
 <section id="posts">
   <div class="wrap">
     <div class="sec-head reveal"><div><div class="eyebrow">Latest</div><h2>From the <i>field.</i></h2></div></div>
@@ -194,7 +208,8 @@ const PILLARS = [
 ];
 const pil = document.getElementById("pillars"), grid = document.getElementById("grid"), note = document.getElementById("note");
 postsReady.then((posts) => {
-grid.innerHTML = posts.map((p) => p.soon ? `<div class="post" data-k="${p.pillar.k}">
+document.getElementById("rc-grid").innerHTML = posts.filter((p) => p.series === "cards" && !p.soon).sort((a, b) => a.n.localeCompare(b.n)).map((p) => `<a class="rc" href="${p.slug}/"><img src="../assets/rule-cards/${p.card}.webp" alt="Rule card ${p.n}: ${p.title}" width="1024" height="1536"><h3>${p.n} · ${p.title}</h3><p>${p.desc}</p></a>`).join("");
+grid.innerHTML = posts.filter((p) => p.series !== "cards").map((p) => p.soon ? `<div class="post" data-k="${p.pillar.k}">
   <span class="pn">${p.n}</span>
   <div class="meta"><span class="pill"><b>${p.pillar.n}</b> ${p.pillar.name}</span></div>
   <div class="art"><img src="../assets/${p.img}" alt="${p.alt}"></div>
