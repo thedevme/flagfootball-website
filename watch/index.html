@@ -104,6 +104,7 @@ section { padding: 100px 0; }
 .vc .shot { position: relative; aspect-ratio: 16 / 9; display:flex; align-items:flex-end; justify-content:center; background: radial-gradient(55% 70% at 50% 75%, rgba(242,106,27,.24), transparent 70%), linear-gradient(160deg, #1f2226, #121316); border-bottom: 1px solid var(--line); overflow: hidden; }
 .vc .shot img { position: relative; max-height: 88%; max-width: 70%; filter: grayscale(1) contrast(1.08) drop-shadow(0 16px 18px rgba(0,0,0,.55)); transition: filter .45s, transform .45s; }
 .vc .shot img.thumb { position:absolute; inset: 0; width: 100%; height: 100%; max-width: none; max-height: none; object-fit: cover; filter: none; }
+.vc .shot img.thumb.tall { object-fit: contain; background: #0d0d0d; }
 .vc:hover .shot img { filter: grayscale(0) drop-shadow(0 16px 18px rgba(0,0,0,.55)); transform: translateY(-4px); }
 .vc .vn { position:absolute; left: 14px; top: 10px; font: 900 54px/.8 "Barlow Condensed"; color: transparent; -webkit-text-stroke: 1.5px rgba(255,255,255,.2); }
 .vc .len { position:absolute; right: 12px; bottom: 12px; font: 700 11px Inter; letter-spacing: .12em; text-transform: uppercase; background: rgba(0,0,0,.6); border-radius: 6px; padding: 4px 8px; }
@@ -218,6 +219,8 @@ section { padding: 100px 0; }
 // `post` is the matching Field Notes post folder, if there is one. The link only shows if that post is in blog/posts.json (or posts.local.json on this computer).
 const VIDEOS = [
   { n: "01", type: "L", t: "Flag Football Rules Explained for Beginners", d: "High school 7v7: the field, the snap, pulling flags, downs and scoring.", img: "girl-passer.png", yt: "CS0TLGBslgc", post: "how-to-play-girls-flag-football/" },
+  { n: "13", type: "S", t: "Her Flag Belt Fell Off. Now What?", d: "No flag to pull, so a one-hand touch ends the play.", img: "girl-runner.png", yt: "3eDnfi9Wma8", thumb: "short-03-belt.jpg", post: "how-to-play-girls-flag-football/" },
+  { n: "14", type: "S", t: "No Fumbles in Flag Football? Here's What Happens", d: "A dropped ball is dead the moment it hits the ground.", img: "girl-carrier.png", yt: "9vIolSFTxiQ", thumb: "short-02-fumble.jpg", post: "how-to-play-girls-flag-football/" },
   { n: "03", type: "L", t: "Girls Flag Football Positions Explained", d: "Who lines up where, and what each player is trying to do.", img: "girl-quarterback.png", yt: "" },
   { n: "09", type: "L", t: "Every Referee Signal in Girls Flag Football", d: "All 38 official signals, drawn and explained.", img: "sig-33.png", yt: "" },
   { n: "06", type: "S", t: "What to Wear to Flag Football", d: "Head to toe, before tryouts.", img: "player-legal.png", yt: "" },
@@ -230,8 +233,9 @@ const VIDEOS = [
   { n: "07", type: "L", t: "Shift vs. Motion: Legal or Illegal?", d: "Five plays. Make the call on each one.", img: "sig-18.png", yt: "" },
   { n: "12", type: "S", t: "Flag Football in the 2028 Olympics", d: "What's happening, and what it means for the high school game.", img: "girl-passer.png", yt: "" },
 ];
-const watch = (v) => `https://www.youtube.com/watch?v=${v.yt}`;
-const thumb = (v) => `https://img.youtube.com/vi/${v.yt}/hqdefault.jpg`;
+// Shorts open in the Shorts player and can carry their own tall thumbnail (assets/)
+const watch = (v) => v.type === "S" ? `https://www.youtube.com/shorts/${v.yt}` : `https://www.youtube.com/watch?v=${v.yt}`;
+const thumb = (v) => v.thumb ? `../assets/${v.thumb}` : `https://img.youtube.com/vi/${v.yt}/hqdefault.jpg`;
 
 const f = VIDEOS[0], fl = !!f.yt;
 const channel = "https://www.youtube.com/@GirlsFlagFootballIllustrated";
@@ -250,7 +254,7 @@ const grid = document.getElementById("grid");
 grid.innerHTML = VIDEOS.map((v) => {
   const live = !!v.yt;
   return `<div class="vc reveal${live ? " live" : ""}" data-k="${v.type}">
-    <${live ? `a href="${watch(v)}" target="_blank" rel="noopener"` : "div"} class="shot">${live ? `<img class="thumb" src="${thumb(v)}" alt="${v.t}: video thumbnail">` : `<img src="../assets/${v.img}" alt="${altFor(v.img)}">`}<span class="vn">${v.n}</span><span class="len">${v.type === "L" ? "Full video" : "Short"}</span><span class="play"></span></${live ? "a" : "div"}>
+    <${live ? `a href="${watch(v)}" target="_blank" rel="noopener"` : "div"} class="shot">${live ? `<img class="thumb${v.thumb ? " tall" : ""}" src="${thumb(v)}" alt="${v.t}: video thumbnail">` : `<img src="../assets/${v.img}" alt="${altFor(v.img)}">`}<span class="vn">${v.n}</span><span class="len">${v.type === "L" ? "Full video" : "Short"}</span><span class="play"></span></${live ? "a" : "div"}>
     <div class="body"><div>${live ? "" : '<span class="soon">Coming soon</span>'}</div><h3>${v.t}</h3><p>${v.d}</p>
     <div class="foot">${live ? `<a href="${watch(v)}" target="_blank" rel="noopener">Watch on YouTube →</a>` : "<span>Subscribe to catch it</span>"}${v.post ? `<a href="../blog/${v.post}" data-post="${v.post.replace(/\/$/, "")}">Read the post →</a>` : ""}</div></div></div>`;
 }).join("");
