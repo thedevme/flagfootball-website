@@ -98,5 +98,54 @@
     "read": 3,
     "img": "girl-runner.png",
     "alt": "A girls flag football player running, one arm out"
+  },
+  {
+    "slug": "flag-football-route-tree-explained",
+    "n": "03",
+    "pillar": {
+      "n": "02",
+      "k": "players",
+      "name": "Players"
+    },
+    "title": "The flag football route tree, explained",
+    "short": "The flag football route tree, explained",
+    "desc": "All nine routes: how deep, which way to cut, the mistake on each, and the odd-out, even-in trick.",
+    "read": 8,
+    "img": "girl-runner.png",
+    "alt": "A girls flag football receiver running her route, one arm out"
+  },
+  {
+    "slug": "is-blocking-allowed-in-flag-football",
+    "n": "05",
+    "series": "cards",
+    "card": "legal-screen",
+    "pillar": {
+      "n": "RC",
+      "k": "cards",
+      "name": "Rule Cards"
+    },
+    "title": "Is blocking allowed in flag football?",
+    "short": "Is blocking allowed in flag football?",
+    "desc": "The only legal block is a screen. Get there first, arms in, no contact. 10 yards if you don't.",
+    "read": 3,
+    "img": "girl-defender.png",
+    "alt": "A girls flag football player in a wide, set stance, seen from behind"
+  },
+  {
+    "slug": "are-there-kickoffs-in-flag-football",
+    "n": "06",
+    "series": "cards",
+    "card": "no-kickoffs",
+    "pillar": {
+      "n": "RC",
+      "k": "cards",
+      "name": "Rule Cards"
+    },
+    "title": "Are there kickoffs in flag football?",
+    "short": "Are there kickoffs in flag football?",
+    "desc": "No kickoffs. Each half starts with a snap from your own 14-yard line.",
+    "read": 3,
+    "img": "girl-quarterback.png",
+    "alt": "A girls flag football quarterback with the ball, looking downfield"
   }
 ]

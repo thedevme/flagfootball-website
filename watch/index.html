@@ -63,6 +63,11 @@ a.fv:hover { border-color: rgba(242,106,27,.6); transform: translateY(-4px); }
 .fv .cap { position:absolute; left: 24px; right: 24px; bottom: 22px; display:flex; flex-direction: column; align-items: flex-start; gap: 8px; }
 .fv .cap b { font: 900 clamp(30px, 3.2vw, 44px)/.92 "Barlow Condensed"; text-transform: uppercase; max-width: 60%; }
 .fv .cap small { color: var(--muted); font-size: 14px; }
+/* live video: the thumbnail carries its own title, so the caption sits below it */
+.fv.live { aspect-ratio: auto; }
+.fv .frame { position: relative; display:block; aspect-ratio: 16 / 9; overflow: hidden; }
+.fv.live .cap { position: static; padding: 20px 24px 24px; }
+.fv.live .cap b { max-width: none; }
 
 /* nfhs note */
 .nfhs { display:grid; grid-template-columns: auto 1fr; gap: 22px; align-items: center; border: 1px solid rgba(242,106,27,.4); border-radius: 22px; padding: 22px 26px; background: rgba(242,106,27,.06); }
@@ -136,6 +141,8 @@ section { padding: 100px 0; }
   .fv .play { width: 60px; height: 60px; left: 40%; top: 38%; }
   .fv .cap b { font-size: 26px; max-width: 70%; }
   .fv .cap small { display:none; }
+  .fv.live .cap { padding: 16px 18px 20px; }
+  .fv.live .cap small { display:block; }
   .nfhs { grid-template-columns: 1fr; gap: 12px; }
   .nfhs .tag { border-right: 0; padding-right: 0; text-align: left; }
   .extras { grid-template-columns: 1fr 1fr; }
@@ -218,9 +225,13 @@ section { padding: 100px 0; }
 // To publish a video: put its YouTube id in `yt`. The card then links to YouTube and uses the YouTube thumbnail.
 // `post` is the matching Field Notes post folder, if there is one. The link only shows if that post is in blog/posts.json (or posts.local.json on this computer).
 const VIDEOS = [
+  { n: "02", type: "L", t: "The Flag Football Route Tree, Explained", d: "All nine routes, the mistake on each, and the trick to remember them.", img: "girl-runner.png", yt: "S2XIemLqapY", post: "flag-football-route-tree-explained/" },
   { n: "01", type: "L", t: "Flag Football Rules Explained for Beginners", d: "High school 7v7: the field, the snap, pulling flags, downs and scoring.", img: "girl-passer.png", yt: "CS0TLGBslgc", post: "how-to-play-girls-flag-football/" },
-  { n: "13", type: "S", t: "Her Flag Belt Fell Off. Now What?", d: "No flag to pull, so a one-hand touch ends the play.", img: "girl-runner.png", yt: "3eDnfi9Wma8", thumb: "short-03-belt.jpg", post: "how-to-play-girls-flag-football/" },
-  { n: "14", type: "S", t: "No Fumbles in Flag Football? Here's What Happens", d: "A dropped ball is dead the moment it hits the ground.", img: "girl-carrier.png", yt: "9vIolSFTxiQ", thumb: "short-02-fumble.jpg", post: "how-to-play-girls-flag-football/" },
+  { n: "13", type: "S", t: "Her Flag Belt Fell Off. Now What?", d: "No flag to pull, so a one-hand touch ends the play.", img: "girl-runner.png", yt: "3eDnfi9Wma8", thumb: "shorts/thumb-belt-falls-off.jpg", post: "how-to-play-girls-flag-football/" },
+  { n: "14", type: "S", t: "No Fumbles in Flag Football? Here's What Happens", d: "A dropped ball is dead the moment it hits the ground.", img: "girl-carrier.png", yt: "9vIolSFTxiQ", thumb: "shorts/thumb-ball-dead.jpg", post: "how-to-play-girls-flag-football/" },
+  { n: "15", type: "S", t: "Protecting Your Flag? That's 10 Yards.", d: "Flag guarding: hands, arms or the ball can't protect the flag.", img: "girl-carrier.png", yt: "jlNOZ0rG-Tw", thumb: "shorts/thumb-flag-guarding.jpg", post: "what-is-flag-guarding-in-flag-football/" },
+  { n: "16", type: "S", t: "The Only Legal Block in Flag Football", d: "A screen: get in the path first, arms in, no contact. Anything else is 10 yards.", img: "girl-defender.png", yt: "CSYHFlkUQSc", post: "is-blocking-allowed-in-flag-football/" },
+  { n: "17", type: "S", t: "No Kickoffs in Flag Football. Here's Where You Start.", d: "Each half starts with a snap from your own 14-yard line.", img: "girl-quarterback.png", yt: "yYPYg2u9fwU", post: "are-there-kickoffs-in-flag-football/" },
   { n: "03", type: "L", t: "Girls Flag Football Positions Explained", d: "Who lines up where, and what each player is trying to do.", img: "girl-quarterback.png", yt: "" },
   { n: "09", type: "L", t: "Every Referee Signal in Girls Flag Football", d: "All 38 official signals, drawn and explained.", img: "sig-33.png", yt: "" },
   { n: "06", type: "S", t: "What to Wear to Flag Football", d: "Head to toe, before tryouts.", img: "player-legal.png", yt: "" },
@@ -239,10 +250,14 @@ const thumb = (v) => v.thumb ? `../assets/${v.thumb}` : `https://img.youtube.com
 
 const f = VIDEOS[0], fl = !!f.yt;
 const channel = "https://www.youtube.com/@GirlsFlagFootballIllustrated";
-document.getElementById("featured").innerHTML = `<${fl ? `a href="${watch(f)}" target="_blank" rel="noopener"` : `a href="${channel}" target="_blank" rel="noopener"`} class="fv">
-  <span class="num">${f.n}</span>${fl ? `<img class="thumb" src="${thumb(f)}" alt="${f.t}: video thumbnail">` : `<img class="art" src="../assets/${f.img}" alt="${altFor(f.img)}">`}
-  <span class="badge">2026–27 NFHS rules</span><span class="play"></span>
-  <span class="cap"><span class="soon">${fl ? "Watch on YouTube" : `Video ${f.n} · Coming soon`}</span><b>${f.t}</b><small>${fl ? f.d : "Subscribe to catch it →"}</small></span></a>`;
+const cap = `<span class="cap"><span class="soon">${fl ? "Watch on YouTube" : `Video ${f.n} · Coming soon`}</span><b>${f.t}</b><small>${fl ? f.d : "Subscribe to catch it →"}</small></span>`;
+document.getElementById("featured").innerHTML = fl
+  ? `<a href="${watch(f)}" target="_blank" rel="noopener" class="fv live"><span class="frame">
+  <span class="num">${f.n}</span><img class="thumb" src="${thumb(f)}" alt="${f.t}: video thumbnail">
+  <span class="badge">2026–27 NFHS rules</span><span class="play"></span></span>${cap}</a>`
+  : `<a href="${channel}" target="_blank" rel="noopener" class="fv">
+  <span class="num">${f.n}</span><img class="art" src="../assets/${f.img}" alt="${altFor(f.img)}">
+  <span class="badge">2026–27 NFHS rules</span><span class="play"></span>${cap}</a>`;
 // once the matching post is live, the unreleased video's card sends people to the post instead
 postsReady.then((posts) => {
   if (fl || !f.post || !postIsLive(posts, f.post.replace(/\/$/, ""))) return;
