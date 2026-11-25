@@ -3,15 +3,445 @@
   "disclosure": "As an Amazon Associate I earn from qualifying purchases. Prices and availability can change on Amazon.",
   "default": [],
   "posts": {
-    "how-to-play-girls-flag-football": { "heading": "Starter gear for a first season", "sub": "What a new player actually needs.", "items": [] },
-    "is-punting-legal-in-girls-flag-football": { "heading": "Gear for practicing the punt", "items": [] },
-    "do-you-have-to-declare-a-punt-in-flag-football": { "heading": "Gear for practicing the punt", "items": [] },
-    "can-you-keep-the-ball-after-scoring-in-flag-football": { "heading": "Game-day gear", "items": [] },
-    "what-happens-if-your-flag-belt-falls-off": { "heading": "Flag belts worth buying", "sub": "A belt that stays on is the best fix for this rule.", "items": [] },
-    "what-is-flag-guarding-in-flag-football": { "heading": "Gear for defenders and ball carriers", "items": [] },
-    "flag-football-route-tree-explained": { "heading": "Gear for practicing routes", "items": [] },
-    "is-blocking-allowed-in-flag-football": { "heading": "Protective gear that is allowed", "items": [] },
-    "are-there-kickoffs-in-flag-football": { "heading": "Gear for the opening play", "items": [] }
+    "how-to-play-girls-flag-football": {
+      "heading": "Starter gear for a first season",
+      "sub": "What a new player actually needs. High school rules say a mouth protector can't have attachments that don't protect the teeth or mouth. They don't say whether a strap counts, so ask your coach before you buy a strapped one.",
+      "items": [
+        {
+          "name": "Adjustable flag football belt set, with belt and flags",
+          "why": "The most-reviewed belt I found: 4.6 stars from over 700 reviews. Fits youth and adults.",
+          "asin": "B0CLP526MC",
+          "img": "https://m.media-amazon.com/images/I/61oczbggwnL._AC_SL500_.jpg"
+        },
+        {
+          "name": "Nxtrnd Two Pro football mouth guard, permanent strap",
+          "why": "4.8 stars from over 1,100 reviews. Fits youth and adults. It has a strap, so see the note on strapped guards.",
+          "asin": "B0FKCX5M91",
+          "img": "https://m.media-amazon.com/images/I/61KXj6wnXJL._AC_SL500_.jpg"
+        },
+        {
+          "name": "adidas Women's F50 League mid-top cleats, firm ground",
+          "why": "Women's sizing. Soccer-style molded studs, which many flag players wear. 4.5 stars from about 250 reviews. Check your league's cleat rules.",
+          "asin": "B0CM7S9LT3",
+          "img": "https://m.media-amazon.com/images/I/71Uxj3QU1+L._AC_SL500_.jpg"
+        }
+      ]
+    },
+    "is-punting-legal-in-girls-flag-football": {
+      "heading": "Gear for practicing the punt",
+      "items": [
+        {
+          "name": "YISSVIC 20 ft agility ladder with cones",
+          "why": "4.6 stars from nearly 1,500 reviews. A ladder and cones for footwork, cuts and route stems.",
+          "asin": "B077VM623X",
+          "img": "https://m.media-amazon.com/images/I/618dAO72VDS._AC_SL500_.jpg"
+        }
+      ]
+    },
+    "do-you-have-to-declare-a-punt-in-flag-football": {
+      "heading": "Gear for practicing the punt",
+      "items": [
+        {
+          "name": "YISSVIC 20 ft agility ladder with cones",
+          "why": "4.6 stars from nearly 1,500 reviews. A ladder and cones for footwork, cuts and route stems.",
+          "asin": "B077VM623X",
+          "img": "https://m.media-amazon.com/images/I/618dAO72VDS._AC_SL500_.jpg"
+        }
+      ]
+    },
+    "can-you-keep-the-ball-after-scoring-in-flag-football": {
+      "heading": "Game-day gear",
+      "items": [
+        {
+          "name": "Takeya Actives insulated 32 oz water bottle",
+          "why": "4.8 stars from over 30,000 reviews. Stays cold through a whole game day.",
+          "asin": "B072QRW9KH",
+          "img": "https://m.media-amazon.com/images/I/611Svmrk42L._AC_SL500_.jpg"
+        },
+        {
+          "name": "Nike Gameday Brasilia drawstring gym bag, 18L",
+          "why": "4.8 stars from nearly 3,500 reviews. Holds cleats, a bottle and a towel.",
+          "asin": "B0FPD47VTT",
+          "img": "https://m.media-amazon.com/images/I/71x3fy01bXL._AC_SL500_.jpg"
+        },
+        {
+          "name": "Adjustable flag football belt set, with belt and flags",
+          "why": "The most-reviewed belt I found: 4.6 stars from over 700 reviews. Fits youth and adults.",
+          "asin": "B0CLP526MC",
+          "img": "https://m.media-amazon.com/images/I/61oczbggwnL._AC_SL500_.jpg"
+        }
+      ]
+    },
+    "what-happens-if-your-flag-belt-falls-off": {
+      "heading": "Flag belts worth buying",
+      "sub": "Adjustable belts with flags that fit youth through adult players.",
+      "items": [
+        {
+          "name": "Adjustable flag football belt set, with belt and flags",
+          "why": "The most-reviewed belt I found: 4.6 stars from over 700 reviews. Fits youth and adults.",
+          "asin": "B0CLP526MC",
+          "img": "https://m.media-amazon.com/images/I/61oczbggwnL._AC_SL500_.jpg"
+        },
+        {
+          "name": "Excel Athletics adjustable belt, 1 belt and 2 flags",
+          "why": "4.6 stars from over 100 reviews. A quick-snap buckle, sold as a single belt.",
+          "asin": "B0BVGBTS9W",
+          "img": "https://m.media-amazon.com/images/I/61pppz97y8L._AC_SL500_.jpg"
+        },
+        {
+          "name": "Franklin Sports pop flag belts, 2 pack",
+          "why": "A known sports brand. 4.8 stars, but only 15 reviews so far. Two belts in one pack.",
+          "asin": "B0HPH1KHTG",
+          "img": "https://m.media-amazon.com/images/I/61MMJ84W2CL._AC_SL500_.jpg"
+        }
+      ]
+    },
+    "what-is-flag-guarding-in-flag-football": {
+      "heading": "Gear for defenders and ball carriers",
+      "items": [
+        {
+          "name": "Adjustable flag football belt set, with belt and flags",
+          "why": "The most-reviewed belt I found: 4.6 stars from over 700 reviews. Fits youth and adults.",
+          "asin": "B0CLP526MC",
+          "img": "https://m.media-amazon.com/images/I/61oczbggwnL._AC_SL500_.jpg"
+        },
+        {
+          "name": "adidas Women's F50 League mid-top cleats, firm ground",
+          "why": "Women's sizing. Soccer-style molded studs, which many flag players wear. 4.5 stars from about 250 reviews. Check your league's cleat rules.",
+          "asin": "B0CM7S9LT3",
+          "img": "https://m.media-amazon.com/images/I/71Uxj3QU1+L._AC_SL500_.jpg"
+        }
+      ]
+    },
+    "flag-football-route-tree-explained": {
+      "heading": "Gear for practicing routes",
+      "items": [
+        {
+          "name": "YISSVIC 20 ft agility ladder with cones",
+          "why": "4.6 stars from nearly 1,500 reviews. A ladder and cones for footwork, cuts and route stems.",
+          "asin": "B077VM623X",
+          "img": "https://m.media-amazon.com/images/I/618dAO72VDS._AC_SL500_.jpg"
+        }
+      ]
+    },
+    "is-blocking-allowed-in-flag-football": {
+      "heading": "The one protective item that is required",
+      "sub": "High school rules require every player to wear a mouth protector. High school rules say a mouth protector can't have attachments that don't protect the teeth or mouth. They don't say whether a strap counts, so ask your coach before you buy a strapped one.",
+      "items": [
+        {
+          "name": "Nxtrnd Two Pro football mouth guard, permanent strap",
+          "why": "4.8 stars from over 1,100 reviews. Fits youth and adults. It has a strap, so see the note on strapped guards.",
+          "asin": "B0FKCX5M91",
+          "img": "https://m.media-amazon.com/images/I/61KXj6wnXJL._AC_SL500_.jpg"
+        },
+        {
+          "name": "Shock Doctor BOLT football mouth guard, built-in strap",
+          "why": "4.6 stars from nearly 500 reviews. Listed as youth and adult, and compatible with braces. It has a strap too.",
+          "asin": "B09CXSTN8Y",
+          "img": "https://m.media-amazon.com/images/I/61NmzYNVwtL._AC_SL500_.jpg"
+        }
+      ]
+    },
+    "are-there-kickoffs-in-flag-football": {
+      "heading": "Game-day gear",
+      "items": [
+        {
+          "name": "Takeya Actives insulated 32 oz water bottle",
+          "why": "4.8 stars from over 30,000 reviews. Stays cold through a whole game day.",
+          "asin": "B072QRW9KH",
+          "img": "https://m.media-amazon.com/images/I/611Svmrk42L._AC_SL500_.jpg"
+        },
+        {
+          "name": "Nike Gameday Brasilia drawstring gym bag, 18L",
+          "why": "4.8 stars from nearly 3,500 reviews. Holds cleats, a bottle and a towel.",
+          "asin": "B0FPD47VTT",
+          "img": "https://m.media-amazon.com/images/I/71x3fy01bXL._AC_SL500_.jpg"
+        },
+        {
+          "name": "Shock Doctor BOLT football mouth guard, built-in strap",
+          "why": "4.6 stars from nearly 500 reviews. Listed as youth and adult, and compatible with braces. It has a strap too.",
+          "asin": "B09CXSTN8Y",
+          "img": "https://m.media-amazon.com/images/I/61NmzYNVwtL._AC_SL500_.jpg"
+        }
+      ]
+    },
+    "high-school-girls-flag-football-rules-parents-guide": {
+      "heading": "Starter gear for the season",
+      "sub": "High school rules say a mouth protector can't have attachments that don't protect the teeth or mouth. They don't say whether a strap counts, so ask your coach before you buy a strapped one.",
+      "items": [
+        {
+          "name": "Nxtrnd Two Pro football mouth guard, permanent strap",
+          "why": "4.8 stars from over 1,100 reviews. Fits youth and adults. It has a strap, so see the note on strapped guards.",
+          "asin": "B0FKCX5M91",
+          "img": "https://m.media-amazon.com/images/I/61KXj6wnXJL._AC_SL500_.jpg"
+        },
+        {
+          "name": "adidas Women's F50 League mid-top cleats, firm ground",
+          "why": "Women's sizing. Soccer-style molded studs, which many flag players wear. 4.5 stars from about 250 reviews. Check your league's cleat rules.",
+          "asin": "B0CM7S9LT3",
+          "img": "https://m.media-amazon.com/images/I/71Uxj3QU1+L._AC_SL500_.jpg"
+        },
+        {
+          "name": "Takeya Actives insulated 32 oz water bottle",
+          "why": "4.8 stars from over 30,000 reviews. Stays cold through a whole game day.",
+          "asin": "B072QRW9KH",
+          "img": "https://m.media-amazon.com/images/I/611Svmrk42L._AC_SL500_.jpg"
+        }
+      ]
+    },
+    "do-you-kick-field-goals-in-flag-football": {
+      "heading": "For kicking practice",
+      "sub": "Only if your state allows tees. A tee can lift the ball no more than 2 inches.",
+      "items": [
+        {
+          "name": "Champion Sports heavy-duty kicking tee, 2 inch",
+          "why": "4.8 stars from over 700 reviews. Two inches is the tallest tee the high school rulebook allows.",
+          "asin": "B0039KM4IO",
+          "img": "https://m.media-amazon.com/images/I/71oC1Klm9CL._AC_SL500_.jpg"
+        }
+      ]
+    },
+    "what-to-buy-for-high-school-girls-flag-football": {
+      "heading": "A first-season shopping list",
+      "sub": "Ask the coach first. High school rules say a mouth protector can't have attachments that don't protect the teeth or mouth. They don't say whether a strap counts, so ask your coach before you buy a strapped one.",
+      "items": [
+        {
+          "name": "Adjustable flag football belt set, with belt and flags",
+          "why": "The most-reviewed belt I found: 4.6 stars from over 700 reviews. Fits youth and adults.",
+          "asin": "B0CLP526MC",
+          "img": "https://m.media-amazon.com/images/I/61oczbggwnL._AC_SL500_.jpg"
+        },
+        {
+          "name": "Nxtrnd Two Pro football mouth guard, permanent strap",
+          "why": "4.8 stars from over 1,100 reviews. Fits youth and adults. It has a strap, so see the note on strapped guards.",
+          "asin": "B0FKCX5M91",
+          "img": "https://m.media-amazon.com/images/I/61KXj6wnXJL._AC_SL500_.jpg"
+        },
+        {
+          "name": "adidas Women's F50 League mid-top cleats, firm ground",
+          "why": "Women's sizing. Soccer-style molded studs, which many flag players wear. 4.5 stars from about 250 reviews. Check your league's cleat rules.",
+          "asin": "B0CM7S9LT3",
+          "img": "https://m.media-amazon.com/images/I/71Uxj3QU1+L._AC_SL500_.jpg"
+        },
+        {
+          "name": "Takeya Actives insulated 32 oz water bottle",
+          "why": "4.8 stars from over 30,000 reviews. Stays cold through a whole game day.",
+          "asin": "B072QRW9KH",
+          "img": "https://m.media-amazon.com/images/I/611Svmrk42L._AC_SL500_.jpg"
+        },
+        {
+          "name": "Nike Gameday Brasilia drawstring gym bag, 18L",
+          "why": "4.8 stars from nearly 3,500 reviews. Holds cleats, a bottle and a towel.",
+          "asin": "B0FPD47VTT",
+          "img": "https://m.media-amazon.com/images/I/71x3fy01bXL._AC_SL500_.jpg"
+        }
+      ]
+    },
+    "nfhs-flag-football-rules-changes-2026-27": {
+      "heading": "Check your mouthguard",
+      "sub": "High school rules say a mouth protector can't have attachments that don't protect the teeth or mouth. They don't say whether a strap counts, so ask your coach before you buy a strapped one.",
+      "items": [
+        {
+          "name": "Nxtrnd Two Pro football mouth guard, permanent strap",
+          "why": "4.8 stars from over 1,100 reviews. Fits youth and adults. It has a strap, so see the note on strapped guards.",
+          "asin": "B0FKCX5M91",
+          "img": "https://m.media-amazon.com/images/I/61KXj6wnXJL._AC_SL500_.jpg"
+        },
+        {
+          "name": "Shock Doctor BOLT football mouth guard, built-in strap",
+          "why": "4.6 stars from nearly 500 reviews. Listed as youth and adult, and compatible with braces. It has a strap too.",
+          "asin": "B09CXSTN8Y",
+          "img": "https://m.media-amazon.com/images/I/61NmzYNVwtL._AC_SL500_.jpg"
+        }
+      ]
+    },
+    "what-to-say-to-your-daughter-from-the-sideline-flag-football": {
+      "heading": "For the parents on the sideline",
+      "items": [
+        {
+          "name": "VEVOR padded folding chair with cup holder and cooler bag",
+          "why": "4.6 stars from over 1,000 reviews. Folds into a carry bag for the sideline.",
+          "asin": "B0C9MF8L3N",
+          "img": "https://m.media-amazon.com/images/I/715K-BNZVVL._AC_SL500_.jpg"
+        },
+        {
+          "name": "Takeya Actives insulated 32 oz water bottle",
+          "why": "4.8 stars from over 30,000 reviews. Stays cold through a whole game day.",
+          "asin": "B072QRW9KH",
+          "img": "https://m.media-amazon.com/images/I/611Svmrk42L._AC_SL500_.jpg"
+        },
+        {
+          "name": "BAND-AID compact first aid kit, 160 piece",
+          "why": "4.8 stars from over 15,000 reviews. Small enough to live in a team bag.",
+          "asin": "B09NWH8553",
+          "img": "https://m.media-amazon.com/images/I/71P6jSfKcsL._AC_SL500_.jpg"
+        }
+      ]
+    },
+    "flag-football-routes-first-five-to-learn": {
+      "heading": "Gear for practicing routes",
+      "items": [
+        {
+          "name": "YISSVIC 20 ft agility ladder with cones",
+          "why": "4.6 stars from nearly 1,500 reviews. A ladder and cones for footwork, cuts and route stems.",
+          "asin": "B077VM623X",
+          "img": "https://m.media-amazon.com/images/I/618dAO72VDS._AC_SL500_.jpg"
+        }
+      ]
+    },
+    "how-long-is-a-flag-football-game": {
+      "heading": "For a long game day",
+      "items": [
+        {
+          "name": "Takeya Actives insulated 32 oz water bottle",
+          "why": "4.8 stars from over 30,000 reviews. Stays cold through a whole game day.",
+          "asin": "B072QRW9KH",
+          "img": "https://m.media-amazon.com/images/I/611Svmrk42L._AC_SL500_.jpg"
+        },
+        {
+          "name": "Nike Gameday Brasilia drawstring gym bag, 18L",
+          "why": "4.8 stars from nearly 3,500 reviews. Holds cleats, a bottle and a towel.",
+          "asin": "B0FPD47VTT",
+          "img": "https://m.media-amazon.com/images/I/71x3fy01bXL._AC_SL500_.jpg"
+        }
+      ]
+    },
+    "is-flag-football-safe-for-girls": {
+      "heading": "Basics worth having",
+      "sub": "No equipment can remove the risk of concussion, and the NFHS doesn't test or approve equipment. High school rules say a mouth protector can't have attachments that don't protect the teeth or mouth. They don't say whether a strap counts, so ask your coach before you buy a strapped one.",
+      "items": [
+        {
+          "name": "Shock Doctor BOLT football mouth guard, built-in strap",
+          "why": "4.6 stars from nearly 500 reviews. Listed as youth and adult, and compatible with braces. It has a strap too.",
+          "asin": "B09CXSTN8Y",
+          "img": "https://m.media-amazon.com/images/I/61NmzYNVwtL._AC_SL500_.jpg"
+        },
+        {
+          "name": "BAND-AID compact first aid kit, 160 piece",
+          "why": "4.8 stars from over 15,000 reviews. Small enough to live in a team bag.",
+          "asin": "B09NWH8553",
+          "img": "https://m.media-amazon.com/images/I/71P6jSfKcsL._AC_SL500_.jpg"
+        },
+        {
+          "name": "Takeya Actives insulated 32 oz water bottle",
+          "why": "4.8 stars from over 30,000 reviews. Stays cold through a whole game day.",
+          "asin": "B072QRW9KH",
+          "img": "https://m.media-amazon.com/images/I/611Svmrk42L._AC_SL500_.jpg"
+        }
+      ]
+    },
+    "flag-football-positions-explained": {
+      "heading": "Gear for any position",
+      "sub": "Ask your coach before you buy cleats.",
+      "items": [
+        {
+          "name": "adidas Women's F50 League mid-top cleats, firm ground",
+          "why": "Women's sizing. Soccer-style molded studs, which many flag players wear. 4.5 stars from about 250 reviews. Check your league's cleat rules.",
+          "asin": "B0CM7S9LT3",
+          "img": "https://m.media-amazon.com/images/I/71Uxj3QU1+L._AC_SL500_.jpg"
+        },
+        {
+          "name": "YISSVIC 20 ft agility ladder with cones",
+          "why": "4.6 stars from nearly 1,500 reviews. A ladder and cones for footwork, cuts and route stems.",
+          "asin": "B077VM623X",
+          "img": "https://m.media-amazon.com/images/I/618dAO72VDS._AC_SL500_.jpg"
+        }
+      ]
+    },
+    "flag-football-uniform-and-equipment-rules": {
+      "heading": "Gear to check against the list",
+      "sub": "Your state can set the flag style. High school rules say a mouth protector can't have attachments that don't protect the teeth or mouth. They don't say whether a strap counts, so ask your coach before you buy a strapped one.",
+      "items": [
+        {
+          "name": "Adjustable flag football belt set, with belt and flags",
+          "why": "The most-reviewed belt I found: 4.6 stars from over 700 reviews. Fits youth and adults.",
+          "asin": "B0CLP526MC",
+          "img": "https://m.media-amazon.com/images/I/61oczbggwnL._AC_SL500_.jpg"
+        },
+        {
+          "name": "Nxtrnd Two Pro football mouth guard, permanent strap",
+          "why": "4.8 stars from over 1,100 reviews. Fits youth and adults. It has a strap, so see the note on strapped guards.",
+          "asin": "B0FKCX5M91",
+          "img": "https://m.media-amazon.com/images/I/61KXj6wnXJL._AC_SL500_.jpg"
+        },
+        {
+          "name": "adidas Women's F50 League mid-top cleats, firm ground",
+          "why": "Women's sizing. Soccer-style molded studs, which many flag players wear. 4.5 stars from about 250 reviews. Check your league's cleat rules.",
+          "asin": "B0CM7S9LT3",
+          "img": "https://m.media-amazon.com/images/I/71Uxj3QU1+L._AC_SL500_.jpg"
+        }
+      ]
+    },
+    "flag-football-drills-at-home": {
+      "heading": "For practice at home",
+      "items": [
+        {
+          "name": "YISSVIC 20 ft agility ladder with cones",
+          "why": "4.6 stars from nearly 1,500 reviews. A ladder and cones for footwork, cuts and route stems.",
+          "asin": "B077VM623X",
+          "img": "https://m.media-amazon.com/images/I/618dAO72VDS._AC_SL500_.jpg"
+        },
+        {
+          "name": "Takeya Actives insulated 32 oz water bottle",
+          "why": "4.8 stars from over 30,000 reviews. Stays cold through a whole game day.",
+          "asin": "B072QRW9KH",
+          "img": "https://m.media-amazon.com/images/I/611Svmrk42L._AC_SL500_.jpg"
+        }
+      ]
+    },
+    "how-scoring-works-in-flag-football": {
+      "heading": "Game-day gear",
+      "items": [
+        {
+          "name": "Takeya Actives insulated 32 oz water bottle",
+          "why": "4.8 stars from over 30,000 reviews. Stays cold through a whole game day.",
+          "asin": "B072QRW9KH",
+          "img": "https://m.media-amazon.com/images/I/611Svmrk42L._AC_SL500_.jpg"
+        },
+        {
+          "name": "Nike Gameday Brasilia drawstring gym bag, 18L",
+          "why": "4.8 stars from nearly 3,500 reviews. Holds cleats, a bottle and a towel.",
+          "asin": "B0FPD47VTT",
+          "img": "https://m.media-amazon.com/images/I/71x3fy01bXL._AC_SL500_.jpg"
+        }
+      ]
+    },
+    "how-to-get-on-a-high-school-girls-flag-football-team": {
+      "heading": "For tryouts",
+      "sub": "Ask the coach first. High school rules say a mouth protector can't have attachments that don't protect the teeth or mouth. They don't say whether a strap counts, so ask your coach before you buy a strapped one.",
+      "items": [
+        {
+          "name": "Nxtrnd Two Pro football mouth guard, permanent strap",
+          "why": "4.8 stars from over 1,100 reviews. Fits youth and adults. It has a strap, so see the note on strapped guards.",
+          "asin": "B0FKCX5M91",
+          "img": "https://m.media-amazon.com/images/I/61KXj6wnXJL._AC_SL500_.jpg"
+        },
+        {
+          "name": "adidas Women's F50 League mid-top cleats, firm ground",
+          "why": "Women's sizing. Soccer-style molded studs, which many flag players wear. 4.5 stars from about 250 reviews. Check your league's cleat rules.",
+          "asin": "B0CM7S9LT3",
+          "img": "https://m.media-amazon.com/images/I/71Uxj3QU1+L._AC_SL500_.jpg"
+        },
+        {
+          "name": "Nike Gameday Brasilia drawstring gym bag, 18L",
+          "why": "4.8 stars from nearly 3,500 reviews. Holds cleats, a bottle and a towel.",
+          "asin": "B0FPD47VTT",
+          "img": "https://m.media-amazon.com/images/I/71x3fy01bXL._AC_SL500_.jpg"
+        }
+      ]
+    },
+    "common-flag-football-penalties": {
+      "heading": "Belts that keep flags where they belong",
+      "sub": "Your state can set the style of flag. Ask your coach before you buy.",
+      "items": [
+        {
+          "name": "Adjustable flag football belt set, with belt and flags",
+          "why": "The most-reviewed belt I found: 4.6 stars from over 700 reviews. Fits youth and adults.",
+          "asin": "B0CLP526MC",
+          "img": "https://m.media-amazon.com/images/I/61oczbggwnL._AC_SL500_.jpg"
+        }
+      ]
+    }
   },
-  "_how_to_fill": "Set tag to your Amazon tracking ID (ends in -20). For each item add: name, why (one line), asin (the product's ASIN) and optionally img (https://m.media-amazon.com/... or assets/...). Leave items empty to keep a post's box hidden."
+  "_how_to_fill": "Generated by tools/gear-build/build_gear.py. Edit the catalog there, or edit this file by hand. Products were checked on Amazon on 2026-11-25. Leave items empty to keep a post's box hidden."
 }
