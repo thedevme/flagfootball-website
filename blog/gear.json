@@ -1,0 +1,17 @@
+{
+  "tag": "flagfootballill-20",
+  "disclosure": "As an Amazon Associate I earn from qualifying purchases. Prices and availability can change on Amazon.",
+  "default": [],
+  "posts": {
+    "how-to-play-girls-flag-football": { "heading": "Starter gear for a first season", "sub": "What a new player actually needs.", "items": [] },
+    "is-punting-legal-in-girls-flag-football": { "heading": "Gear for practicing the punt", "items": [] },
+    "do-you-have-to-declare-a-punt-in-flag-football": { "heading": "Gear for practicing the punt", "items": [] },
+    "can-you-keep-the-ball-after-scoring-in-flag-football": { "heading": "Game-day gear", "items": [] },
+    "what-happens-if-your-flag-belt-falls-off": { "heading": "Flag belts worth buying", "sub": "A belt that stays on is the best fix for this rule.", "items": [] },
+    "what-is-flag-guarding-in-flag-football": { "heading": "Gear for defenders and ball carriers", "items": [] },
+    "flag-football-route-tree-explained": { "heading": "Gear for practicing routes", "items": [] },
+    "is-blocking-allowed-in-flag-football": { "heading": "Protective gear that is allowed", "items": [] },
+    "are-there-kickoffs-in-flag-football": { "heading": "Gear for the opening play", "items": [] }
+  },
+  "_how_to_fill": "Set tag to your Amazon tracking ID (ends in -20). For each item add: name, why (one line), asin (the product's ASIN) and optionally img (https://m.media-amazon.com/... or assets/...). Leave items empty to keep a post's box hidden."
+}
