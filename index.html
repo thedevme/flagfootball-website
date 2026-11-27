@@ -303,7 +303,7 @@ footer { border-top: 1px solid var(--line); padding: 36px 0 110px; color: var(--
 </head>
 <body>
 <nav><div class="wrap"><a class="brand" href="#">Flag Football <b>Illustrated</b></a>
-  <div class="nl"><a class="on" href="./">Book</a><a href="watch/">Watch</a><a href="blog/">Field Notes</a></div>
+  <div class="nl"><a class="on" href="./">Book</a><a href="watch/">Watch</a><a href="blog/">Blog</a></div>
   <a class="btn sm" href="#buy">Get the book</a></div></nav>
 <div class="subnav" aria-label="On this page"><div class="wrap"><span class="sl">On this page</span><a href="#dyk">Did you know</a><a href="#contents">Contents</a><a href="#inside">Inside</a><a href="#signals">Signals</a><a href="#notes">Latest notes</a><a href="#soon">Coming soon</a><a href="#buy">Pricing</a></div></div>
 
@@ -554,7 +554,7 @@ const spy = new IntersectionObserver((es) => es.forEach((e) => { if (!e.isInters
 subLinks.forEach((a) => { const t = document.querySelector(a.hash); if (t) spy.observe(t); });
 </script>
 <script>
-// Field Notes cards come from blog/posts.json (and posts.local.json on this computer). "home": "featured" is the big card.
+// Blog cards come from blog/posts.json (and posts.local.json on this computer). "home": "featured" is the big card.
 postsReady.then((posts) => {
   const cards = posts.filter((p) => p.home).sort((a, b) => (b.home === "featured") - (a.home === "featured"));
   document.getElementById("fn-grid").insertAdjacentHTML("afterbegin", cards.map((p) => p.soon

@@ -42,7 +42,7 @@
 
   const KIT_FORM = "10114185";
   const SIGNUP = {
-    k: "Field Notes by email",
+    k: "Blog by email",
     h: "New rule cards and videos, in your inbox.",
     p: "One short email when something new is out. No spam, unsubscribe any time.",
   };

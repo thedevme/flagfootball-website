@@ -1,4 +1,4 @@
-// Blog post / Magazine switch for Field Notes posts. Posts open as a plain blog post;
+// Blog post / Magazine switch for Blog posts. Posts open as a plain blog post;
 // the switch flips to the magazine layout, and the choice carries to other posts for this visit.
 // Load in <head> so the view applies before the page paints.
 (function () {

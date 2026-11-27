@@ -4,7 +4,7 @@ Static site for the book *Girls Flag Football, Illustrated* (2026–27 NFHS rule
 
 - `index.html`: the Book page (homepage)
 - `watch/`: the YouTube page
-- `blog/`: Field Notes, the blog
+- `blog/`: Blog, the blog
 - `shared/`: shared styles and scripts
 - `assets/`: images and chapter data
 
@@ -16,7 +16,7 @@ python3 -m http.server 8766 --directory website
 
 ## Posts and drafts
 
-Post cards on the Book page and Field Notes come from two files:
+Post cards on the Book page and Blog come from two files:
 
 - `blog/posts.json`: published posts. This one gets pushed.
 - `blog/posts.local.json`: drafts. Ignored by git, so it never leaves this computer.
