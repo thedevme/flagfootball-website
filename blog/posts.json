@@ -162,5 +162,20 @@
     "read": 5,
     "img": "girl-quarterback.png",
     "alt": "A girls flag football quarterback with the ball, looking downfield"
+  },
+  {
+    "slug": "do-you-kick-field-goals-in-flag-football",
+    "n": "12",
+    "pillar": {
+      "n": "04",
+      "k": "rules",
+      "name": "Rules &amp; Signals"
+    },
+    "title": "Do You Kick Field Goals in Flag Football? (2026–27 NFHS)",
+    "short": "Do you kick field goals in flag football?",
+    "desc": "Only if your state allows it. Under 2026–27 NFHS rules a field goal is a place kick from a placeholder, worth 3 points, and it needs state adoption.",
+    "read": 4,
+    "img": "girl-kicker.png",
+    "alt": "A girls flag football player kicking the ball"
   }
 ]
