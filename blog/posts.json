@@ -177,5 +177,20 @@
     "read": 4,
     "img": "girl-kicker.png",
     "alt": "A girls flag football player kicking the ball"
+  },
+  {
+    "slug": "what-to-buy-for-high-school-girls-flag-football",
+    "n": "13",
+    "pillar": {
+      "n": "03",
+      "k": "parents",
+      "name": "Parents"
+    },
+    "title": "What to Buy for Your Daughter's First High School Flag Football Season",
+    "short": "What to buy for her first flag football season",
+    "desc": "What the 2026–27 NFHS rules require every player to wear, what's optional, and what to ask the coach before you spend a dollar.",
+    "read": 6,
+    "img": "girl-runner.png",
+    "alt": "A girls flag football player running with the ball"
   }
 ]
